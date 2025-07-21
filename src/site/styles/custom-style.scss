@@ -157,7 +157,7 @@ body.infobox-enabled [data-callout="infobox"] .callout-content th:first-child,
 body:not(.css-settings-manager) [data-callout="infobox"] .callout-content td:first-child,
 body:not(.css-settings-manager) [data-callout="infobox"] .callout-content th:first-child {
     font-weight: bold;
-    padding: 0;
+    padding: 10px;
     text-align: right;
     width: 35%;
 }
