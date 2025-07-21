@@ -1,0 +1,11 @@
+/*** Links ***/
+.markdown-embed-link {
+  display: none;
+}
+
+.markdown-preview-view .callout[data-callout="quote"] .markdown-embed {
+  border: none;
+  margin: 0px !important;
+  padding: 0px !important;
+  position: relative;
+}
