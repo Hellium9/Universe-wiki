@@ -3,3 +3,4 @@
 ---
 
 This is the home page.
+Voici la page centrale.
