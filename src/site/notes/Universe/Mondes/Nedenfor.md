@@ -10,7 +10,7 @@
 > 
 > |type|stat|
 > | --- | --- |
-> |Alias:| Le monde souterrain, 
+> |Alias: | Le monde souterrain, 
 > | | L’Enfer de feu, 
 > | | L’Abîme infernal,
 > | Type: | Monde Abyssal
