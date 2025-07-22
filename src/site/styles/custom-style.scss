@@ -3,13 +3,6 @@
   background-clip: padding-box !important;
 }
 
-/* Ajoute un solide bloc coloré en arrière-plan de toute page */
-body,
-.page,
-.site-container {
-  background-color: var(--background-secondary) !important;
-}
-
 /* Couvre toute zone fixe ou pseudo-zone en haut */
 header,
 .navbar,
