@@ -540,7 +540,7 @@ ul.task-list {
 
 .search-keys {
     @media (max-width: 800px) {
-        display: none;
+        display: flex;
     }
 }
 
