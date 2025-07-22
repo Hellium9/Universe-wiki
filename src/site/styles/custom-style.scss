@@ -1,18 +1,12 @@
-/* Couvre toute zone au sommet, même les pseudo-éléments ou overlays */
-*, *::before, *::after {
-  background-clip: padding-box !important;
-}
-
-/* Couvre toute zone fixe ou pseudo-zone en haut */
-header,
-.navbar,
-body::before,
-body::after,
-.page::before,
-.page::after,
-.site-container::before,
-.site-container::after {
-  background-color: var(--background-secondary) !important;
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: env(safe-area-inset-top, 20px);
+  background-color: var(--background-secondary);
+  z-index: 1;
 }
 
 /*** Links ***/
