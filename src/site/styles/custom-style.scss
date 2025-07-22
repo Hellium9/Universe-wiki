@@ -1,4 +1,4 @@
-
+--status-bar-background: var(--background-secondary) !important;
 
 
 /* ✨ Texte en italique */
@@ -9,7 +9,7 @@ em, i {
 
 /* 💪 Texte en gras */
 strong, b {
-  color: var(--color-accent-2) !important;
+  color: var(--interactive-accent) !important;
   font-weight: bold;
 }
 
