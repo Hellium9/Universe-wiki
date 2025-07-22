@@ -1,26 +1,9 @@
-/* 🎨 Restaurer les couleurs des titres */
-h1 {
-  color: #ff6ec7 !important;  /* Rose néon */
-}
-h2 {
-  color: #f0f020 !important;  /* Jaune néon */
-}
-h3 {
-  color: #00ffff !important;  /* Cyan */
-}
-h4 {
-  color: #ff8c00 !important;  /* Orange fluo */
-}
-h5 {
-  color: #ff44aa !important;
-}
-h6 {
-  color: #cccccc !important;
-}
+
+
 
 /* ✨ Texte en italique */
 em, i {
-  color: var(--color-accent) !important;
+  color: #00ffff !important;
   font-style: italic;
 }
 
