@@ -1,8 +1,16 @@
-.page::before,
-.page::after,
+/* Couvre les bandeaux top invisibles ou décoratifs */
 body::before,
-body::after {
-    background-color: var(--background-secondary) !important;
+.page::before,
+.theme-light::before,
+.site-container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: env(safe-area-inset-top, 40px);
+  width: 100%;
+  background-color: var(--background-secondary) !important;
+  z-index: 999;
 }
 
 /*** Links ***/
