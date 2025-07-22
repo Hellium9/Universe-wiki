@@ -20,7 +20,7 @@ h6 {
 
 /* ✨ Texte en italique */
 em, i {
-  color: #ffb3ec !important;
+  color: var(--color-accent) !important;
   font-style: italic;
 }
 
