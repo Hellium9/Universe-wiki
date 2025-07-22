@@ -1,16 +1,8 @@
-.navbar {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  padding-top: env(safe-area-inset-top) !important;
-  background-color: var(--background-secondary) !important;
-  z-index: 10 !important;
-}
-
-body {
-  padding-top: env(safe-area-inset-top);
-  background-color: var(--background-primary);
+.page::before,
+.page::after,
+body::before,
+body::after {
+    background-color: var(--background-secondary) !important;
 }
 
 /*** Links ***/
