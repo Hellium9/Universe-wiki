@@ -342,10 +342,11 @@ ul.task-list {
 }
 
 .navbar {
+    padding-top: env(safe-area-inset-top);
+    margin-top: calc(-1 * env(safe-area-inset-top));
     background-color: var(--background-secondary);
     position: absolute;
     width: 100%;
-    top: 0;
     left: 0;
     right: 0;
     z-index: 3;
