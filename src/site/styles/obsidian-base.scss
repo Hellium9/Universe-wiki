@@ -2511,7 +2511,7 @@ body {
     display: flex;
     font-size: var(--status-bar-font-size);
     justify-content: flex-end;
-    min-height: 50px;
+    min-height: 18px;
     padding: var(--size-2-2) var(--size-2-2) var(--size-2-2);
     gap: var(--size-2-1);
     user-select: none;
@@ -10247,7 +10247,7 @@ body {
     padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
   }
   .mobile-navbar {
-    background-color: var(--background-primary);
+    background-color: var(--background-secondary);
     padding: 0 max(var(--safe-area-inset-right), var(--size-4-4)) 0 max(var(--safe-area-inset-left), var(--size-4-4));
     position: absolute;
     left: 0;
