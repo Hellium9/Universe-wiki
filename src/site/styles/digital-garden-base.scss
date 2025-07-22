@@ -328,6 +328,7 @@ ul.task-list {
 }
 
 .empty-navbar {
+    background-color: var(--background-secondary);
     display: flex;
     justify-content: flex-end;
     margin-bottom: -60px;
@@ -342,8 +343,6 @@ ul.task-list {
 }
 
 .navbar {
-    padding-top: env(safe-area-inset-top);
-    margin-top: calc(-1 * env(safe-area-inset-top));
     background-color: var(--background-secondary);
     position: absolute;
     width: 100%;
