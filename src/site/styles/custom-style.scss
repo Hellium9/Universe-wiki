@@ -1,16 +1,25 @@
-/* Couvre les bandeaux top invisibles ou décoratifs */
-body::before,
-.page::before,
-.theme-light::before,
-.site-container::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: env(safe-area-inset-top, 40px);
-  width: 100%;
+/* Couvre toute zone au sommet, même les pseudo-éléments ou overlays */
+*, *::before, *::after {
+  background-clip: padding-box !important;
+}
+
+/* Ajoute un solide bloc coloré en arrière-plan de toute page */
+body,
+.page,
+.site-container {
   background-color: var(--background-secondary) !important;
-  z-index: 999;
+}
+
+/* Couvre toute zone fixe ou pseudo-zone en haut */
+header,
+.navbar,
+body::before,
+body::after,
+.page::before,
+.page::after,
+.site-container::before,
+.site-container::after {
+  background-color: var(--background-secondary) !important;
 }
 
 /*** Links ***/
