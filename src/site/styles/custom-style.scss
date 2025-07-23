@@ -6,7 +6,7 @@ body {
 
 /* 2. Conteneurs transparents + effet flou */
 body {
-  background-color: rgba(0, 0, 0, 0.3) !important;
+  background-color: rgba(0, 0, 0, 50.3) !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
