@@ -123,6 +123,7 @@ body:not(.css-settings-manager) [data-callout="infobox"] {
     border: 1px solid var(--background-modifier-border);
     font-size: var(--infobox-font-size);
     margin: 0 auto;
+    padding: 0;
 }
 
 body.infobox-enabled [data-callout="infobox"] .callout-title,
