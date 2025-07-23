@@ -35,6 +35,13 @@ body {
   -webkit-backdrop-filter: blur(10px);
 }
 
+/* Neutraliser les parents qui bloquent le fixed */
+main, .site-wrapper, .page, .markdown-preview-view {
+  position: static !important;
+  transform: none !important;
+  overflow: visible !important;
+}
+
 /*** ------------------------------- ***/
 
 /* ✨ Texte en italique */
