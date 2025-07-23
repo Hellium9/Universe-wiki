@@ -31,6 +31,8 @@
 > A. R 33d, 2.66d, -00d 00°
 > (Selon le système de repérage tetradimensionnel) 
 
+# Description:
+
 Nedenfor est un des mondes centraux du [[Universe/Mondes/Abysses\|Système Abyssal]]. Datant de l’ère de la **Grande Corruption**, ce monde se trouve à la racine des Abysses. 
 
 Tout au long des millénaires, de nombreux ponts furent établis vers les mondes de la surfaces[^1], menant à des guerres de domination et de conquête, ce qui valut à Nedenfor cette réputation d’abîme infernale, ou d’enfer de feu par la quasi-totalité des cultures et religions existantes dans l’Univers. 
