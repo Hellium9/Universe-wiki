@@ -14,10 +14,9 @@
                 .getElementById('globalsearch')
                 .classList
                 .add('active');
-						document
+            document
                 .getElementById('term')
                 .focus();
-            
         }
     }
 
@@ -207,10 +206,12 @@
             const snippet = r.content.substring(snippetStart, snippetEnd);
 
             resultsHTML += `
-                <div class="searchresult">
-                    <a class="search-link" href="${r.url}">${r.title}</a>
-                    <p>...${snippet}...</p>
-                </div>`;
+                <a href="${r.url}" class="searchresult" style="display:block; text-decoration:none;">
+                    <div>
+                        <span class="search-link">${r.title}</span>
+                        <p>...${snippet}...</p>
+                    </div>
+                </a>`;
         });
         resultsHTML += '</div>';
         resultsDiv.innerHTML = resultsHTML;
