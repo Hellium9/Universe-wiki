@@ -3,35 +3,29 @@
     document.addEventListener('DOMContentLoaded', init, false);
     document.addEventListener('DOMContentLoaded', setCorrectShortcut, false);
 
-    window.toggleSearch = function () {
-        if (document.getElementById('globalsearch').classList.contains('active')) {
-            document
-                .getElementById('globalsearch')
-                .classList
-                .remove('active');
+    window.toggleSearch = function (event) {
+        const globalSearch = document.getElementById('globalsearch');
+        const searchField = document.getElementById('term');
+
+        if (globalSearch.classList.contains('active')) {
+            if (!event || (event.target !== searchField && !searchField.contains(event.target))) {
+                globalSearch.classList.remove('active');
+            }
         } else {
-            document
-                .getElementById('globalsearch')
-                .classList
-                .add('active');
-            document
-                .getElementById('term')
-                .focus();
+            globalSearch.classList.add('active');
+            searchField.focus();
         }
-    }
+    };
 
     window.toggleTagSearch = function (evt) {
         console.log(evt.textContent);
         const term = evt.textContent;
         if (term) {
-            window
-                .document
-                .getElementById('term')
-                .value = term.trim();
+            window.document.getElementById('term').value = term.trim();
             window.toggleSearch();
             window.search();
         }
-    }
+    };
 
     const loadingSvg = `
     <svg width="100" height="100" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
@@ -94,18 +88,10 @@
             };
     };
 
-    function setCorrectShortcut() {
-        if (navigator.platform.toUpperCase().indexOf('MAC') >= 0) {
-            document
-                .querySelectorAll(".search-keys")
-                .forEach(x => x.innerHTML = "⌘ + K");
-        }
-    }
-
     function createIndex(posts) {
         const encoder = (str) => str
             .toLowerCase()
-            .split(/([^a-z]|[^\x00-\x7F])/)
+            .split(/([^a-z]|[^\x00-\x7F])/);
         const contentIndex = new FlexSearch.Document({
             cache: true,
             charset: "latin:extra",
@@ -125,11 +111,14 @@
                     encode: encoder
                 }
             ]
-        })
+        });
         posts.forEach((p, idx) => {
             contentIndex.add({
-                id: idx, title: p.title, content: p.content, tags: p.tags //Change to removeHTML
-            })
+                id: idx,
+                title: p.title,
+                content: p.content,
+                tags: p.tags
+            });
         });
         return contentIndex;
     }
@@ -138,11 +127,11 @@
         const searchIndexDate = '{{meta.buildDate|isoDate}}';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
-            let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
+            let {date, docs} = JSON.parse(localStorage.getItem('searchIndex'));
             if(date === searchIndexDate){
                 shouldFetch = false;
                 let index = createIndex(docs);
-                window.docs = docs
+                window.docs = docs;
                 window.index = index;
             }        
         }
@@ -150,26 +139,20 @@
             let docs = await(await fetch('/searchIndex.json?v={{meta.buildDate|isoDate}}')).json();
             let index = createIndex(docs);
             localStorage.setItem("searchIndex", JSON.stringify({date: '{{meta.buildDate|isoDate}}', docs}));
-            window.docs = docs
+            window.docs = docs;
             window.index = index;
         }
 
-        // Disable zoom for mobile on search input
         document.querySelector('#term').setAttribute('style', 'font-size:16px;');
-
         document.addEventListener('keydown', (e) => {
             if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
                 e.preventDefault();
                 toggleSearch();
             }
             if (e.key === 'Escape') {
-                document
-                    .getElementById('globalsearch')
-                    .classList
-                    .remove('active');
+                document.getElementById('globalsearch').classList.remove('active');
             }
         });
-
         const debouncedSearch = debounce(search, 200, false);
         field = document.querySelector('#term');
         field.addEventListener('keydown', (e) => {
@@ -182,15 +165,10 @@
 
     window.lastSearch = '';
     async function search() {
-        let search = field
-            .value
-            .trim();
-        if (!search) 
-            return;
-        if (search == lastSearch) 
-            return;
-        window.lastSearch = search;
+        let search = field.value.trim();
+        if (!search || search === lastSearch) return;
 
+        window.lastSearch = search;
         resultsDiv.innerHTML = loadingSvg;
 
         let results = offlineSearch(search);
@@ -215,33 +193,5 @@
         });
         resultsHTML += '</div>';
         resultsDiv.innerHTML = resultsHTML;
-    }
-
-    function truncate(str, size) {
-        str = str.replaceAll(/<[^>]*>/g, '');
-        if (str.length < size) 
-            return str;
-        return str.substring(0, size - 3) + '...';
-    }
-
-    function offlineSearch(searchQuery) {
-        let data = window.docs;
-
-        let searchResults = index.search(searchQuery, [
-            {
-                field: "title",
-                limit: 5
-            }, {
-                field: "content",
-                weight: 10
-            }
-        ]);
-
-        const dataIds = Array.from(new Set(searchResults.flatMap(result => result.result)));
-        return dataIds.map((id) => {
-            let result = data[id];
-            result.content = truncate(result.content, 400);
-            return result;
-        });
     }
 </script>
