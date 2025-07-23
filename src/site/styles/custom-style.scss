@@ -120,7 +120,7 @@ body:not(.css-settings-manager) .cm-callout:has([data-callout="infobox"]) .edit-
 body.infobox-enabled [data-callout="infobox"],
 body:not(.css-settings-manager) [data-callout="infobox"] {
     /*background: transparent;*/
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(57, 56, 56, 0.2);
     border: 1px solid var(--background-modifier-border);
     font-size: var(--infobox-font-size);
     margin: 0 auto;
@@ -155,7 +155,7 @@ body:not(.css-settings-manager) [data-callout="infobox"] .callout-content h2 {
 body.infobox-enabled [data-callout="infobox"] .callout-content h3,
 body:not(.css-settings-manager) [data-callout="infobox"] .callout-content h3 {
     /*background: var(--background-secondary);*/
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(57, 56, 56, 0.2);
     font-size: 1.0625em;
     margin: var(--size-4-1) 0 !important;
     padding: var(--size-2-1) var(--size-2-2);
