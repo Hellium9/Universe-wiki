@@ -111,7 +111,7 @@ body:not(.css-settings-manager) .cm-callout:has([data-callout="infobox"]) .edit-
 
 body.infobox-enabled [data-callout="infobox"],
 body:not(.css-settings-manager) [data-callout="infobox"] {
-    background: transparent;
+    /*background: transparent;*/
     border: 1px solid var(--background-modifier-border);
     font-size: var(--infobox-font-size);
     margin: 0 auto;
