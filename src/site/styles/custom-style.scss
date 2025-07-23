@@ -1,6 +1,7 @@
 /* === 1. Image de fond globale === */
 body {
-  background: url("https://i.pinimg.com/736x/4e/e5/b7/4ee5b7b92f26439362eecedf4735ef0a.jpg") no-repeat center center fixed;
+  /*background: url("https://i.pinimg.com/736x/4e/e5/b7/4ee5b7b92f26439362eecedf4735ef0a.jpg") no-repeat center center fixed;*/
+  background: url("https://images.app.goo.gl/At3bfCvX8RiTb4Au8") no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -8,9 +9,9 @@ body {
 
 /* === 2. Calque de flou + assombrissement === */
 .markdown-preview-view {
-  background-color: rgba(0, 0, 0, 0.9) !important;
+  background-color: rgba(0, 0, 0, 1) !important;
   backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
+  /*-webkit-backdrop-filter: blur(10px) !important;*/
 }
 
 
