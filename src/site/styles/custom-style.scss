@@ -37,9 +37,7 @@ strong, b {
 }
 
 hr {
-  border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.5); /* blanc à 50% d’opacité */
-  margin: 2em 0;
+  color: rgba(255, 255, 255, 0.5) !important; /* blanc à 50% d’opacité */
 }
 
 /*** ------------------------------- ***/
@@ -258,6 +256,7 @@ body:not(.css-settings-manager).is-tablet .markdown-preview-sizer > div:has([dat
     top: 0px;
     width: var(--infobox-width);
     margin-left: 20px;
+    background-color: var(--background-primary);
 }
 
 body.infobox-enabled:not(.is-mobile) .show-inline-title .markdown-preview-sizer > div:has([data-callout="infobox"]),
