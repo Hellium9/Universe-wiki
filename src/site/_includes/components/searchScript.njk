@@ -201,7 +201,7 @@
         }
         resultsHTML += '<div style="max-width:100%;">';
         results.forEach(r => {
-            const snippetStart = Math.max(0, r.content.indexOf(search) - 30);
+            const snippetStart = r.content.indexOf(search);
             const snippetEnd = Math.min(r.content.length, snippetStart + 60);
             const snippet = r.content.substring(snippetStart, snippetEnd);
 
