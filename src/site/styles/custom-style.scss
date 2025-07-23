@@ -1,6 +1,11 @@
+
+
+/*** ------------------------------- ***/
+
+/*** BACKGROUND + TRANSPARENT ***/
+
 /* === 1. Image de fond globale === */
 body {
-  /*background: url("https://i.pinimg.com/736x/4e/e5/b7/4ee5b7b92f26439362eecedf4735ef0a.jpg") no-repeat center center fixed;*/
   background: url("https://cdn.discordapp.com/attachments/1073263124708335707/1397655650070429786/IMG_0694.jpg?ex=688283c2&is=68813242&hm=a45e1723fbb105449ef0a4abbe45a6a25745503df7dd04ac183d04afc379a3e1&") no-repeat center center fixed;
   background-size: cover;
   margin: 0;
@@ -10,12 +15,14 @@ body {
 /* === 2. Calque de flou + assombrissement === */
 .markdown-preview-view {
   background-color: rgba(0, 0, 0, 1) !important;
-  backdrop-filter: blur(10px) !important;
+  /*backdrop-filter: blur(10px) !important;*/
   /*-webkit-backdrop-filter: blur(10px) !important;*/
 }
 
 
 /*** ------------------------------- ***/
+
+/*** TEXTE CUSTOM ***/
 
 /* ✨ Texte en italique */
 em, i {
@@ -29,7 +36,15 @@ strong, b {
   font-weight: bold;
 }
 
-/*** Links ***/
+hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.5); /* blanc à 50% d’opacité */
+  margin: 2em 0;
+}
+
+/*** ------------------------------- ***/
+
+/*** LINKS ***/
 
 .markdown-embed-link {
   display: none !important;
@@ -42,6 +57,7 @@ strong, b {
   position: relative !important;
 }
 
+/*** ------------------------------- ***/
 
 /*** Wikipedia Infobox ***/
 
@@ -174,7 +190,7 @@ body.infobox-enabled [data-callout="infobox"] .callout-content th:first-child,
 body:not(.css-settings-manager) [data-callout="infobox"] .callout-content td:first-child,
 body:not(.css-settings-manager) [data-callout="infobox"] .callout-content th:first-child {
     font-weight: bold;
-    padding: 10px;
+    padding: 6px; /* table space between column 1 and 2 */
     text-align: right;
     width: 35%;
 }
