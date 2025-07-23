@@ -126,9 +126,8 @@ body:not(.css-settings-manager) [data-callout="infobox"] {
     /*margin: 0 auto; */
     margin: 15px;
     padding: 10px;
-    width: var(--infobox-width);
+    /*width: var(--infobox-width);*/
     /*float: right;*/
-    top: 0;
 }
 
 body.infobox-enabled [data-callout="infobox"] .callout-title,
