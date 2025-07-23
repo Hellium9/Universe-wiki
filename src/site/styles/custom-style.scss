@@ -4,6 +4,17 @@ body {
   background-size: cover;
 }
 
+/* 1bis. Assombrir le fond */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
 /* 2. Couche floue sur les blocs de contenu */
 .markdown-preview-view {
   background-color: rgba(0, 0, 0, 1) !important;
@@ -15,6 +26,12 @@ body {
 .nav-bar {
   position: fixed !important;
   top: 0 !important;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 /*** ------------------------------- ***/
