@@ -8,7 +8,8 @@ body {
 body::before {
   content: "";
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
@@ -16,19 +17,19 @@ body::before {
 }
 
 /* 2. Couche floue sur les blocs de contenu */
-.markdown-preview-view {
+body {
   background-color: rgba(0, 0, 0, 1) !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
 /* 3. Navbar fixe + propre */
-.nav-bar {
+.navbar {
   position: fixed !important;
   top: 0 !important;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 9999;
   background-color: rgba(0, 0, 0, 0.6) !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
