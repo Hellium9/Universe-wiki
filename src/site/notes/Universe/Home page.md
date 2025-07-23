@@ -21,22 +21,8 @@ Liste des Mondes répertoriés
 
 
 > [!foldable]+ Mondes connus:
-> <pre class="dataview dataview-error">Evaluation Error: eval@[native code]
-@
-@
-asyncEvalInContext@
-@
-render@
-onload@
-@capacitor://localhost/app.js:1:1232051
-@
-executeJs@
-@
-@
-Promise@[native code]
-__async@
-@
-@
-Promise@[native code]
-__async@
-fulfilled@</pre>
+> This is a test
+> - 1
+> - 2
+> - 3
+> - 4
