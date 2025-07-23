@@ -5,17 +5,7 @@ body {
 }
 
 /* 2. Conteneurs transparents + effet flou */
-body,
-div,
-main,
-.container,
-.markdown-preview-view,
-.markdown-preview-sizer,
-.sidebar,
-.sidebar-content,
-.header,
-.nav-bar,
-.graph-view {
+body {
   background-color: rgba(0, 0, 0, 0.3) !important;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
