@@ -1,32 +1,28 @@
-/* --- FOND GLOBAL --- */
+/* 1. Image de fond globale */
 body {
   background: url("https://i.pinimg.com/736x/4e/e5/b7/4ee5b7b92f26439362eecedf4735ef0a.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
-/* --- THÈME GLOBAL TRANSPARENT --- */
-.theme-dark {
-  --background-primary: transparent !important;
-  --background-primary-alt: transparent !important;
-  --background-secondary: transparent !important;
-  --background-secondary-alt: transparent !important;
-  --background-modifier-cover: rgba(0, 0, 0, 0.3) !important;
+/* 2. Conteneurs transparents + effet flou */
+body,
+div,
+main,
+.container,
+.markdown-preview-view,
+.markdown-preview-sizer,
+.sidebar,
+.sidebar-content,
+.header,
+.nav-bar,
+.graph-view {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-/* --- FLOU ET TRANSPARENCE --- */
-.workspace-split.mod-root,
-.workspace-tabs,
-.workspace-tab-header,
-.workspace-leaf,
-.workspace-leaf-content,
-.nav-folder,
-.nav-file-title,
-.nav-folder-title,
-.side-dock,
-.status-bar {
-  background-color: rgba(0, 0, 0, 0.4) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
+/* 3. Enlever les bords/ombres gênants */
+* {
   border: none !important;
   box-shadow: none !important;
 }
