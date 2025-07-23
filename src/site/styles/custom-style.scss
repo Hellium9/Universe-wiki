@@ -1,46 +1,4 @@
-/* 1. Image de fond globale */
-body {
-  background: url("https://i.pinimg.com/736x/4e/e5/b7/4ee5b7b92f26439362eecedf4735ef0a.jpg") no-repeat center center fixed;
-  background-size: cover;
-}
 
-/* 1bis. Assombrir le fond */
-/*body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}*/
-
-/* 2. Couche floue sur les blocs de contenu */
-body {
-  background-color: rgba(0, 0, 0, 0.3) !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-/* 3. Navbar fixe + propre */
-/*.navbar {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  background-color: rgba(0, 0, 0, 0.6) !important;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}*/
-
-/* Neutraliser les parents qui bloquent le fixed */
-/*main, .site-wrapper, .page, .markdown-preview-view {
-  position: static !important;
-  transform: none !important;
-  overflow: visible !important;
-}*/
 
 /*** ------------------------------- ***/
 
