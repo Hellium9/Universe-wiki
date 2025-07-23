@@ -8,8 +8,8 @@ body {
 
 /* === 2. Calque de flou + assombrissement === */
 .markdown-preview-view {
-  position: relative;
-  background-color: rgba(0, 0, 0, 0.6) !important; /* assombrir ici */
+  /*position: relative;*/
+  background-color: rgba(0, 0, 0, 1) !important; /* assombrir ici */
   z-index: 0;
   overflow: hidden;
 }
