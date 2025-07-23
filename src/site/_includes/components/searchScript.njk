@@ -14,23 +14,9 @@
                 .getElementById('globalsearch')
                 .classList
                 .add('active');
-						document
+            document
                 .getElementById('term')
                 .focus();
-            
-        }
-    }
-
-    window.toggleTagSearch = function (evt) {
-        console.log(evt.textContent);
-        const term = evt.textContent;
-        if (term) {
-            window
-                .document
-                .getElementById('term')
-                .value = term.trim();
-            window.toggleSearch();
-            window.search();
         }
     }
 
@@ -52,124 +38,31 @@
                    values="2;0" calcMode="linear"
                    repeatCount="indefinite" />
           </circle>
-          <circle cx="22" cy="22" r="6" stroke-opacity="0">
-              <animate attributeName="r"
-                   begin="3s" dur="3s"
-                   values="6;22"
-                   calcMode="linear"
-                   repeatCount="indefinite" />
-              <animate attributeName="stroke-opacity"
-                   begin="3s" dur="3s"
-                   values="1;0" calcMode="linear"
-                   repeatCount="indefinite" />
-              <animate attributeName="stroke-width"
-                   begin="3s" dur="3s"
-                   values="2;0" calcMode="linear"
-                   repeatCount="indefinite" />
-          </circle>
-          <circle cx="22" cy="22" r="8">
-              <animate attributeName="r"
-                   begin="0s" dur="1.5s"
-                   values="6;1;2;3;4;5;6"
-                   calcMode="linear"
-                   repeatCount="indefinite" />
-          </circle>
       </g>
-  </svg>`;
-
-    function debounce(func, wait, immediate) {
-        var timeout;
-        return function () {
-            var context = this,
-                args = arguments;
-            var later = function () {
-                timeout = null;
-                if (!immediate) 
-                    func.apply(context, args);
-                };
-            var callNow = immediate && !timeout;
-            clearTimeout(timeout);
-            timeout = setTimeout(later, wait);
-            if (callNow) 
-                func.apply(context, args);
-            };
-    };
-
-    function setCorrectShortcut() {
-        if (navigator.platform.toUpperCase().indexOf('MAC') >= 0) {
-            document
-                .querySelectorAll(".search-keys")
-                .forEach(x => x.innerHTML = "⌘ + K");
-        }
-    }
-
-    function createIndex(posts) {
-        const encoder = (str) => str
-            .toLowerCase()
-            .split(/([^a-z]|[^\x00-\x7F])/)
-        const contentIndex = new FlexSearch.Document({
-            cache: true,
-            charset: "latin:extra",
-            optimize: true,
-            index: [
-                {
-                    field: "content",
-                    tokenize: "reverse",
-                    encode: encoder
-                }, {
-                    field: "title",
-                    tokenize: "forward",
-                    encode: encoder
-                }, {
-                    field: "tags",
-                    tokenize: "forward",
-                    encode: encoder
-                }
-            ]
-        })
-        posts.forEach((p, idx) => {
-            contentIndex.add({
-                id: idx, title: p.title, content: p.content, tags: p.tags //Change to removeHTML
-            })
-        });
-        return contentIndex;
-    }
+    </svg>`;
 
     async function init() {
         const searchIndexDate = '{{meta.buildDate|isoDate}}';
         let shouldFetch = true;
-        if(localStorage.getItem("searchIndex")) {
-            let {date, docs}= JSON.parse(localStorage.getItem('searchIndex'));
-            if(date === searchIndexDate){
+        if (localStorage.getItem("searchIndex")) {
+            let { date, docs } = JSON.parse(localStorage.getItem('searchIndex'));
+            if (date === searchIndexDate) {
                 shouldFetch = false;
                 let index = createIndex(docs);
-                window.docs = docs
+                window.docs = docs;
                 window.index = index;
-            }        
+            }
         }
-        if(shouldFetch){
-            let docs = await(await fetch('/searchIndex.json?v={{meta.buildDate|isoDate}}')).json();
+        if (shouldFetch) {
+            let docs = await (await fetch('/searchIndex.json?v={{meta.buildDate|isoDate}}')).json();
             let index = createIndex(docs);
-            localStorage.setItem("searchIndex", JSON.stringify({date: '{{meta.buildDate|isoDate}}', docs}));
-            window.docs = docs
+            localStorage.setItem("searchIndex", JSON.stringify({ date: '{{meta.buildDate|isoDate}}', docs }));
+            window.docs = docs;
             window.index = index;
         }
 
-        // Disable zoom for mobile on search input
+        // Désactiver le zoom sur mobile
         document.querySelector('#term').setAttribute('style', 'font-size:16px;');
-
-        document.addEventListener('keydown', (e) => {
-            if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
-                e.preventDefault();
-                toggleSearch();
-            }
-            if (e.key === 'Escape') {
-                document
-                    .getElementById('globalsearch')
-                    .classList
-                    .remove('active');
-            }
-        });
 
         const debouncedSearch = debounce(search, 200, false);
         field = document.querySelector('#term');
@@ -181,16 +74,9 @@
         resultsDiv = document.querySelector('#search-results');
     }
 
-    window.lastSearch = '';
     async function search() {
-        let search = field
-            .value
-            .trim();
-        if (!search) 
-            return;
-        if (search == lastSearch) 
-            return;
-        window.lastSearch = search;
+        let search = field.value.trim();
+        if (!search) return;
 
         resultsDiv.innerHTML = loadingSvg;
 
@@ -202,25 +88,18 @@
         }
         resultsHTML += '<div style="max-width:100%;">';
         results.forEach(r => {
-            const snippetStart = Math.max(0, r.content.indexOf(search) - 30);
+            const snippetStart = Math.max(0, r.content.toLowerCase().indexOf(search.toLowerCase()) - 30);
             const snippetEnd = Math.min(r.content.length, snippetStart + 60);
             const snippet = r.content.substring(snippetStart, snippetEnd);
 
             resultsHTML += `
-                <div class="searchresult">
-                    <a class="search-link" href="${r.url}">${r.title}</a>
+                <div class="searchresult" onclick="window.location='${r.url}'" style="cursor: pointer;">
+                    <a class="search-link" href="${r.url}" style="font-weight: bold; display: block;">${r.title}</a>
                     <p>...${snippet}...</p>
                 </div>`;
         });
         resultsHTML += '</div>';
         resultsDiv.innerHTML = resultsHTML;
-    }
-
-    function truncate(str, size) {
-        str = str.replaceAll(/<[^>]*>/g, '');
-        if (str.length < size) 
-            return str;
-        return str.substring(0, size - 3) + '...';
     }
 
     function offlineSearch(searchQuery) {
@@ -242,5 +121,26 @@
             result.content = truncate(result.content, 400);
             return result;
         });
+    }
+
+    function truncate(str, size) {
+        str = str.replaceAll(/<[^>]*>/g, '');
+        if (str.length < size) return str;
+        return str.substring(0, size - 3) + '...';
+    }
+
+    function debounce(func, wait, immediate) {
+        let timeout;
+        return function () {
+            const context = this, args = arguments;
+            const later = function () {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            const callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
     }
 </script>
