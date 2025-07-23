@@ -128,7 +128,7 @@
         })
         posts.forEach((p, idx) => {
             contentIndex.add({
-                id: idx, title: p.title, content: p.content, tags: p.tags //Change to removeHTML
+                id: idx, title: p.title, content: p.content, tags: p.tags
             })
         });
         return contentIndex;
@@ -201,9 +201,15 @@
         }
         resultsHTML += '<div style="max-width:100%;">';
         results.forEach(r => {
-            const snippetStart = r.content.indexOf(search);
-            const snippetEnd = Math.min(r.content.length, snippetStart + 60);
-            const snippet = r.content.substring(snippetStart, snippetEnd);
+            const snippetStart = Math.max(0, r.content.indexOf(search) - 30);
+            const snippetEnd = Math.min(r.content.length, snippetStart + search.length + 60);
+            let snippet = r.content.substring(snippetStart, snippetEnd);
+            
+            // Clean HTML tags
+            snippet = snippet.replace(/<[^>]*>/g, '');
+            
+            // Highlight the search term
+            snippet = snippet.replace(new RegExp(`(${search})`, 'gi'), '<b>$1</b>');
 
             resultsHTML += `
                 <a href="${r.url}" class="searchresult" style="display:block; text-decoration:none;">
