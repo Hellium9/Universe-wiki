@@ -4,9 +4,23 @@ body {
   background-size: cover;
 }
 
-/* 2. Conteneurs transparents + effet flou */
-body {
-  background-color: rgba(0, 0, 0, 50.3) !important;
+/* 2. Couche floue sur les blocs de contenu */
+main,
+.markdown-preview-view,
+.sidebar,
+.graph-view {
+  background-color: rgba(0, 0, 0, 1) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* 3. Navbar fixe + propre */
+.nav-bar {
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.5); /* pour la lisibilité */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
