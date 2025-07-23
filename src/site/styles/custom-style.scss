@@ -1,3 +1,31 @@
+/*** ONGLETS RÉTRACTABLES ***/
+.markdown-preview-view [data-callout="foldable"] {
+  border: none !important;
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+  padding-bottom: 0.85em !important; 
+}
+
+.markdown-preview-view [data-callout="foldable"] .callout-icon {
+  display: none;
+}
+
+.markdown-preview-view [data-callout="foldable"] .callout-arrow {
+  display: none;
+}
+
+.markdown-preview-view [data-callout="foldable"] .callout-title {
+  display: flex;
+  //font-weight: bold !important;
+  color: var(--h1-color);
+  font-size: var(--h1-size) !important;
+  //border-left: 4px;
+}
+
+/*** ------------------------------- ***/
+
 body {
   --background-modifier-border: rgba(255, 255, 255, 0.2) !important;
 }
