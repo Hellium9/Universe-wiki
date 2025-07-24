@@ -1,3 +1,33 @@
+.callout > .callout-content > .internal-embed,
+.callout > .callout-content > .markdown-embed {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+/* S'assurer que le contenu inclus reste à l’intérieur du callout */
+.callout > .callout-content .markdown-embed-content {
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* Empêche le contenu inclus de "sortir" */
+.callout .internal-embed,
+.callout .markdown-embed {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+
+
 /*** ONGLETS RÉTRACTABLES ***/
 .markdown-preview-view [data-callout="foldable"] {
   border: none !important;
