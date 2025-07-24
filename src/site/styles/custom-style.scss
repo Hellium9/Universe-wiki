@@ -85,8 +85,8 @@ body {
 /* === 2. Calque de flou + assombrissement === */
 .markdown-preview-view {
   background-color: rgba(0, 0, 0, 1) !important;
-  /*backdrop-filter: blur(10px) !important;*/
-  /*-webkit-backdrop-filter: blur(10px) !important;*/
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
 }
 
 
