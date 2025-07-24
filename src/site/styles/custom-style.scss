@@ -76,7 +76,8 @@ body {
 
 /* === 1. Image de fond globale === */
 body {
-  background: url("https://cdn.discordapp.com/attachments/1073263124708335707/1397655650070429786/IMG_0694.jpg?ex=688283c2&is=68813242&hm=a45e1723fbb105449ef0a4abbe45a6a25745503df7dd04ac183d04afc379a3e1&") no-repeat center center fixed;
+  /*background: url("https://cdn.discordapp.com/attachments/1073263124708335707/1397655650070429786/IMG_0694.jpg?ex=688283c2&is=68813242&hm=a45e1723fbb105449ef0a4abbe45a6a25745503df7dd04ac183d04afc379a3e1&") no-repeat center center fixed;*/
+  background: url("https://i.pinimg.com/originals/31/82/ec/3182ecfd9449ba0fb465f4bc20c089a8.jpg") no-repeat center center fixed;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -84,9 +85,9 @@ body {
 
 /* === 2. Calque de flou + assombrissement === */
 .markdown-preview-view {
-  background-color: rgba(0, 0, 0, 0.3) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
+  background-color: rgba(0, 0, 0, 1) !important;
+  /*backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;*/
 }
 
 
