@@ -5,7 +5,7 @@
   padding: 0 !important;
   margin: 0 !important;
   display: block !important;
-  padding-bottom: 0.85em !important; 
+  padding-bottom: 0.85em !important;
 }
 
 .markdown-preview-view [data-callout="foldable"] .callout-icon {
@@ -18,10 +18,15 @@
 
 .markdown-preview-view [data-callout="foldable"] .callout-title {
   display: flex;
-  //font-weight: bold !important;
+  /*font-weight: bold !important;*/
   color: var(--h1-color);
   font-size: var(--h1-size) !important;
-  //border-left: 4px;
+}
+
+.markdown-preview-view [data-callout="foldable"] .callout-title {
+  border-bottom: 2px solid var(--background-modifier-border);
+  padding-bottom: 0.2em;
+  margin-bottom: 1em;
 }
 
 /*** ------------------------------- ***/
