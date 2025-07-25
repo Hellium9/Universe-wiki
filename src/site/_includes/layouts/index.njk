@@ -10,12 +10,11 @@
       {% include imp %}
     {% endfor %}
   </head>
-  <nav class="navbar">
-    {%include "components/navbar.njk"%}
-  </nav>
   <body class="theme-{{meta.baseTheme}} markdown-preview-view markdown-rendered markdown-preview-section {{meta.bodyClasses}}">
     {%include "components/notegrowthhistory.njk"%}
-    {% if settings.dgShowFileTree === true %}
+    {% if settings.dgShowFileTree !== true %}
+      {%include "components/navbar.njk"%}
+    {%else%}
       {%include "components/filetree.njk"%}
     {% endif %}
     {% if settings.dgEnableSearch === true %}
@@ -76,5 +75,5 @@
       {% include imp %}
     {% endfor %}
     {%include "components/lucideIcons.njk"%}
-  </body>
-</html>
+    </body>
+  </html>
