@@ -347,7 +347,7 @@ body {
     --slider-track-background: var(--background-modifier-border);
     --slider-track-height: 3px;
     /* Status bar */
-    --status-bar-background: var(--background-primary);
+    --status-bar-background: var(--background-secondary);
     --status-bar-border-color: var(--divider-color);
     --status-bar-border-width: 1px 0 0 1px;
     --status-bar-font-size: var(--font-ui-smaller);
@@ -421,7 +421,7 @@ body {
     --tag-padding-y: 0.25em;
     --tag-radius: 2em;
     /* Window frame */
-    --titlebar-background: var(--background-primary);
+    --titlebar-background: var(--background-secondary);
     --titlebar-background-focused: var(--background-secondary-alt);
     --titlebar-border-width: 0px;
     --titlebar-border-color: var(--background-modifier-border);
@@ -10247,7 +10247,7 @@ body {
     padding: 0 var(--safe-area-inset-right) 0 var(--safe-area-inset-left);
   }
   .mobile-navbar {
-    background-color: var(--background-secondary);
+    background-color: var(--background-primary);
     padding: 0 max(var(--safe-area-inset-right), var(--size-4-4)) 0 max(var(--safe-area-inset-left), var(--size-4-4));
     position: absolute;
     left: 0;
