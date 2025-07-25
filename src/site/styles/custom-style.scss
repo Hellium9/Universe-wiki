@@ -1,37 +1,6 @@
 
 
 /*** ONGLETS RÉTRACTABLES ***/
-/*.markdown-preview-view [data-callout="foldable"] {
-  border: none !important;
-  background: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: block !important;
-  padding-bottom: 0.85em !important;
-}
-
-.markdown-preview-view [data-callout="foldable"] .callout-icon {
-  display: none;
-}
-
-.markdown-preview-view [data-callout="foldable"] .callout-arrow {
-  display: none;
-}
-
-.markdown-preview-view [data-callout="foldable"] .callout-title {
-  display: flex;
-  font-weight: bold !important;
-  color: var(--h1-color);
-  font-size: var(--h1-size) !important;
-}
-
-.markdown-preview-view [data-callout="foldable"] .callout-title {
-  border-bottom: 2px solid var(--background-modifier-border);
-  padding-bottom: 0.2em;
-  margin-bottom: 1em;
-}*/
-
-/*** ------------------- ***/
 
 details.callout[data-callout="foldable"] {
   background: none;
@@ -49,21 +18,42 @@ details.callout[data-callout="foldable"] summary.callout-title {
   color: var(--h1-color);
   font-size: var(--h1-size) !important;
   border-bottom: 2px solid var(--background-modifier-border);
-  padding-bottom: 0.2em;
+  padding-bottom: 0.4em;
   margin-bottom: 1em;
   position: relative;
   padding-left: 1.5em; /* laisse de la place pour la flèche */
   cursor: pointer;
 }
 
-details.callout[data-callout="foldable"] summary.callout-title::before {
+details.callout[data-callout="foldable"] .internal-embed:not(.image-embed) {
+    display: block;
+    border-bottom: 2px solid var(--background-modifier-border);
+    padding-bottom: 0.4em;
+}
+
+details.callout[data-callout="foldable"] .callout,
+.callout * {
+  border-left: none !important;
+  margin-left: 0px !important;
+  padding-left: 0px !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+details.callout[data-callout="foldable"] summary.callout-title::after {
   content: "▸";
-  position: absolute;
-  left: 0;
+  position: relative;
+  left: 0.4em;
   font-size: 0.9em;
   transition: transform 0.2s ease;
   opacity: 0.8;
 }
+
+/* Quand le bloc est ouvert, on fait pivoter la flèche */
+details.callout[data-callout="foldable"][open] summary.callout-title::after {
+  transform: rotate(90deg);
+}
+
 
 /* Quand le bloc est ouvert, on fait pivoter la flèche */
 details.callout[data-callout="foldable"][open] summary.callout-title::before {
