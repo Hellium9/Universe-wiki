@@ -128,13 +128,15 @@
         })
         posts.forEach((p, idx) => {
             contentIndex.add({
-                id: idx, title: p.title, content: p.content, tags: p.tags
+                id: idx, title: p.title, content: p.content, tags: p.tags //Change to removeHTML
             })
         });
         return contentIndex;
     }
 
     async function init() {
+        //init offline search index
+
         const searchIndexDate = '{{meta.buildDate|isoDate}}';
         let shouldFetch = true;
         if(localStorage.getItem("searchIndex")) {
@@ -154,9 +156,7 @@
             window.index = index;
         }
 
-        // Disable zoom for mobile on search input
-        document.querySelector('#term').setAttribute('style', 'font-size:16px;');
-
+        //open searchmodal when ctrl + k is pressed, cmd + k on mac
         document.addEventListener('keydown', (e) => {
             if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
                 e.preventDefault();
@@ -168,6 +168,90 @@
                     .classList
                     .remove('active');
             }
+
+            //navigate search results with arrow keys
+            if (document.getElementById('globalsearch').classList.contains('active')) {
+                if (e.key === 'ArrowDown') {
+                    e.preventDefault();
+                    let active = document.querySelector('.searchresult.active');
+                    if (active) {
+                        active
+                            .classList
+                            .remove('active');
+                        if (active.nextElementSibling) {
+                            active
+                                .nextElementSibling
+                                .classList
+                                .add('active');
+                        } else {
+                            document
+                                .querySelector('.searchresult')
+                                .classList
+                                .add('active');
+                        }
+                    } else {
+                        document
+                            .querySelector('.searchresult')
+                            .classList
+                            .add('active');
+                    }
+
+                    let currentActive = document.querySelector('.searchresult.active');
+                    if (currentActive) {
+                        currentActive.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'start'});
+                    }
+                }
+                if (e.key === 'ArrowUp') {
+                    e.preventDefault();
+                    let active = document.querySelector('.searchresult.active');
+                    if (active) {
+                        active
+                            .classList
+                            .remove('active');
+                        if (active.previousElementSibling) {
+                            active
+                                .previousElementSibling
+                                .classList
+                                .add('active');
+                        } else {
+                            document
+                                .querySelectorAll('.searchresult')
+                                .forEach((el) => {
+                                    if (!el.nextElementSibling) {
+                                        el
+                                            .classList
+                                            .add('active');
+                                    }
+                                });
+                        }
+                    } else {
+                        document
+                            .querySelectorAll('.searchresult')
+                            .forEach((el) => {
+                                if (el.nextElementSibling) {
+                                    el
+                                        .classList
+                                        .add('active');
+                                }
+                            });
+                    }
+
+                    let currentActive = document.querySelector('.searchresult.active');
+                    if (currentActive) {
+                        currentActive.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'start'});
+                    }
+
+                }
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    let active = document.querySelector('.searchresult.active');
+                    if (active) {
+                        window.location.href = active
+                            .querySelector("a")
+                            .href;
+                    }
+                }
+            }
         });
 
         const debouncedSearch = debounce(search, 200, false);
@@ -178,8 +262,14 @@
             }
         });
         resultsDiv = document.querySelector('#search-results');
-    }
 
+        const params = new URL(location.href).searchParams;
+        if (params.get('q')) {
+            field.setAttribute('value', params.get('q'));
+            toggleSearch();
+            search();
+        }
+    }
     window.lastSearch = '';
     async function search() {
         let search = field
@@ -189,41 +279,51 @@
             return;
         if (search == lastSearch) 
             return;
+        console.log(`search for ${search}`);
         window.lastSearch = search;
 
         resultsDiv.innerHTML = loadingSvg;
-
+        //let searchRequest = await fetch(`/api/search?term=${encodeURIComponent(search)}`);
+        //let results = await searchRequest.json();
         let results = offlineSearch(search);
         let resultsHTML = '';
         if (!results.length) {
-            resultsDiv.innerHTML = `<p>No results for "${search}"</p>`;
+            let resultParagraph = document.createElement("p");
+            resultParagraph.innerText = `No results for "${search}"`;
+            resultsDiv.innerHTML = '';
+            resultsDiv.appendChild(resultParagraph);
             return;
         }
         resultsHTML += '<div style="max-width:100%;">';
+        // we need to add title, url from ref
         results.forEach(r => {
-            const snippetStart = Math.max(0, r.content.indexOf(search) - 30);
-            const snippetEnd = Math.min(r.content.length, snippetStart + search.length + 60);
-            let snippet = r.content.substring(snippetStart, snippetEnd);
-            
-            // Clean HTML tags
-            snippet = snippet.replace(/<[^>]*>/g, '');
-            
-            // Highlight the search term
-            snippet = snippet.replace(new RegExp(`(${search})`, 'gi'), '<b>$1</b>');
-
-            resultsHTML += `
-                <a href="${r.url}" class="searchresult" style="display:block; text-decoration:none;">
-                    <div>
-                        <span class="search-link">${r.title}</span>
-                        <p>...${snippet}...</p>
+            if(r.tags && r.tags.length > 0){
+                resultsHTML += `<div class="searchresult">
+                    <a class="search-link" href="${r.url}">${r.title}</a>
+                    <div onclick="window.location='${r.url}'">
+                        <div class="header-meta">
+                            <div class="header-tags">
+                                ${r.tags.map(tag=>'<a class="tag" href="JavaScript:Void(0);">#'+tag+'</a>').join("")}
+                            </div>
+                        </div>
+                        ${r.content}
                     </div>
-                </a>`;
+                </div>`;
+            } else {
+                resultsHTML += `<div class="searchresult">
+                    <a class="search-link" href="${r.url}">${r.title}</a>
+                    <div onclick="window.location='${r.url}'">
+                        ${r.content}
+                    </div>
+                </div>`;
+            }
         });
         resultsHTML += '</div>';
         resultsDiv.innerHTML = resultsHTML;
     }
 
     function truncate(str, size) {
+        //first, remove HTML
         str = str.replaceAll(/<[^>]*>/g, '');
         if (str.length < size) 
             return str;
@@ -233,21 +333,48 @@
     function offlineSearch(searchQuery) {
         let data = window.docs;
 
-        let searchResults = index.search(searchQuery, [
-            {
-                field: "title",
-                limit: 5
-            }, {
-                field: "content",
-                weight: 10
-            }
-        ]);
+        let isTagSearch = searchQuery[0] === "#" && searchQuery.length > 1;
 
-        const dataIds = Array.from(new Set(searchResults.flatMap(result => result.result)));
-        return dataIds.map((id) => {
+        let searchResults = isTagSearch
+            ? index.search(searchQuery.substring(1), [
+                {
+                    field: "tags"
+                }
+            ])
+            : index.search(searchQuery, [
+                {
+                    field: "title",
+                    limit: 5
+                }, {
+                    field: "content",
+                    weight: 10
+                }
+            ]);
+
+        const getByField = (field) => {
+            const results = searchResults.filter((x) => x.field === field)
+            if (results.length === 0) {
+                return []
+            } else {
+                return [...results[0].result]
+            }
+        }
+        const allIds = new Set([
+            ...getByField("title"),
+            ...getByField("content"),
+            ...getByField("tags")
+        ])
+        const dataIds = [...allIds];
+        const finalResults = dataIds.map((id) => {
             let result = data[id];
             result.content = truncate(result.content, 400);
+            result.tags = result
+                .tags
+                .filter((x) => x != "gardenEntry" && x != "note"); //Note is automatically added by 11ty. GardenEntry is used internally to mark the home page
+
             return result;
-        });
+        })
+        return finalResults;
+
     }
 </script>
