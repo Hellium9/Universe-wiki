@@ -105,9 +105,10 @@ strong, b {
   font-weight: bold;
 }
 
-hr {
-  display: block;
-  color: rgba(255, 255, 255, 0.5) !important; /* blanc à 50% d’opacité */
+.markdown-rendered hr {
+    border: none;
+    border-top: var(--hr-thickness) solid;
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 /*** ------------------------------- ***/
