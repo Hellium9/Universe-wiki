@@ -65,17 +65,28 @@ details.callout[data-callout="foldable"][open] summary.callout-title::before {
 
 /*** BACKGROUND + TRANSPARENT ***/
 
-/* === 1. Image de fond globale === */
-
-/*body {
-  background: url("https://i.pinimg.com/originals/31/82/ec/3182ecfd9449ba0fb465f4bc20c089a8.jpg") no-repeat center center fixed;
-  background-size: cover;
+body {
   margin: 0;
   padding: 0;
-  background-color: rgba(0, 0, 0, 1) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
-}*/
+  position: relative;
+  background-color: rgba(0, 0, 0, 1); /* assombrit par-dessus le flou */
+  /*color: white;*/
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url("https://i.pinimg.com/originals/31/82/ec/3182ecfd9449ba0fb465f4bc20c089a8.jpg") no-repeat center center;
+  background-size: cover;
+  filter: blur(10px);
+  z-index: -1;
+}
+
 
 
 /*** ------------------------------- ***/
