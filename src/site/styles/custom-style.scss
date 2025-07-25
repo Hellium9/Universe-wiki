@@ -1,7 +1,5 @@
-
-
 /*** ONGLETS RÉTRACTABLES ***/
-
+/* <Details> */
 details.callout[data-callout="foldable"] {
   background: none;
   position: relative;
@@ -60,22 +58,77 @@ details.callout[data-callout="foldable"][open] summary.callout-title::before {
   transform: rotate(90deg);
 }
 
+/* ![foldable]- */
+
+.markdown-preview-view [data-callout="foldable"] {
+  border-radius: 0px;
+  background: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+  padding-bottom: 0.85em !important;
+}
+
+.markdown-preview-view [data-callout="foldable"] .callout-icon,
+.markdown-preview-view [data-callout="foldable"] .callout-fold {
+  opacity: 0;
+}
+
+.markdown-preview-view [data-callout="foldable"] .callout-title {
+  display: flex;
+  align-items: center;
+  font-weight: bold !important;
+  color: var(--h1-color);
+  font-size: var(--h1-size) !important;
+  position: relative;
+  padding-left: 0em;
+  cursor: pointer;
+}
+
+.markdown-preview-view [data-callout="foldable"] .callout-title {
+  border-bottom: var(--hr-thickness) solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  padding-bottom: 0.4em;
+  margin-bottom: 0.4em;
+}
+
+.markdown-preview-view [data-callout="foldable"] .callout .callout-content {
+  border-bottom: var(--hr-thickness) solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  padding-bottom: 1em;
+  margin-bottom: 0em;
+}
+
+
+/* Flèche dans le titre, vers le bas par défaut (ouvert) */
+.markdown-preview-view [data-callout="foldable"] .callout-title::before {
+  content: "▸";
+  display: inline-block;
+  transform: rotate(90deg); /* vers le bas */
+  transition: transform 0.2s ease;
+  margin-right: 0em;
+}
+
+/* Quand le callout est fermé → flèche vers la droite */
+.markdown-preview-view [data-callout="foldable"].is-collapsed .callout-title::before {
+  transform: rotate(0deg);
+}
 
 /*** ------------------------------- ***/
 
 /*** BACKGROUND + TRANSPARENT ***/
 
-/* Image */
+/* Shadow */
 body {
   margin: 0;
   padding: 0;
   position: relative;
-  background-color: rgba(0, 0, 0, 1); /* assombrit par-dessus le flou */
+  background-color: var(--background-primary);
   /*color: white;*/
   z-index: 1;
 }
 
-/* Blur */
+/* IMG */
 body::before {
   content: "";
   position: fixed;
@@ -94,12 +147,14 @@ body::after {
     content: "";
     position: fixed;
     top: 0;
-    left: 4em;
-    right: 4em;
-    background-color: rgba(0, 0, 0, 0.4);
-    /*width: 100vw;*/
-    height: 100vh;
+    left: 3%;
+    background-color: var(--background-primary);
+    opacity: 0.4;
+    height: 100%;
+    width: 94%;
     z-index: -1;
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    /*width: 100vw;*/
 }
 
 /*** ------------------------------- ***/
