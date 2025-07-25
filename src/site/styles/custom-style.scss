@@ -65,6 +65,7 @@ details.callout[data-callout="foldable"][open] summary.callout-title::before {
 
 /*** BACKGROUND + TRANSPARENT ***/
 
+/* Image */
 body {
   margin: 0;
   padding: 0;
@@ -74,6 +75,7 @@ body {
   z-index: 1;
 }
 
+/* Blur */
 body::before {
   content: "";
   position: fixed;
@@ -87,7 +89,17 @@ body::before {
   z-index: -1;
 }
 
-
+/* Dark */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
 
 /*** ------------------------------- ***/
 
