@@ -1,7 +1,7 @@
 
 
 /*** ONGLETS RÉTRACTABLES ***/
-.markdown-preview-view [data-callout="foldable"] {
+/*.markdown-preview-view [data-callout="foldable"] {
   border: none !important;
   background: none !important;
   padding: 0 !important;
@@ -20,7 +20,7 @@
 
 .markdown-preview-view [data-callout="foldable"] .callout-title {
   display: flex;
-  /*font-weight: bold !important;*/
+  font-weight: bold !important;
   color: var(--h1-color);
   font-size: var(--h1-size) !important;
 }
@@ -29,7 +29,43 @@
   border-bottom: 2px solid var(--background-modifier-border);
   padding-bottom: 0.2em;
   margin-bottom: 1em;
+}*/
+
+/*** ------------------- ***/
+
+details.callout[data-callout="foldable"] {
+  background: none;
+  position: relative;
 }
+
+details.callout[data-callout="foldable"] > summary.callout-title {
+  display: flex;
+  align-items: center;
+  font-weight: bold !important;
+  color: var(--h1-color);
+  font-size: var(--h1-size) !important;
+  border-bottom: 2px solid var(--background-modifier-border);
+  padding-bottom: 0.2em;
+  margin-bottom: 1em;
+  position: relative;
+  padding-left: 1.5em; /* laisse de la place pour la flèche */
+  cursor: pointer;
+}
+
+details.callout[data-callout="foldable"] > summary.callout-title::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  font-size: 0.9em;
+  transition: transform 0.2s ease;
+  opacity: 0.8;
+}
+
+/* Quand le bloc est ouvert, on fait pivoter la flèche */
+details.callout[data-callout="foldable"][open] > summary.callout-title::before {
+  transform: rotate(90deg);
+}
+
 
 /*** ------------------------------- ***/
 
