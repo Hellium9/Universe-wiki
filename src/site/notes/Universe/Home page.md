@@ -43,8 +43,7 @@ Abysses
 
 <details class="callout foldable" data-callout="foldable">
   <summary class="callout-title">Mondes</summary>
-  <div class="callout-content">
-<div class="transclusion internal-embed is-loaded">
+  <div class="transclusion internal-embed is-loaded">
   <a class="markdown-embed-link" href="/ressources/abysses/#z7147p" aria-label="Open link">
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -60,5 +59,4 @@ Abysses
     </blockquote>
   </div>
 </div>
-  </div>
 </details>
