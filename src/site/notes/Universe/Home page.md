@@ -56,7 +56,7 @@ Abysses
   <div class="markdown-embed">
     <blockquote>
       <p><em>Les Abysses ne sont pas les Enfers. Ce ne sont que les vestiges d’un passé fort lointain, où les larmes taries n’ont su descendre plus bas.</em></p>
-      <p><strong>– Andreus Pahs Morcaenus – Le Livre de Morca</strong></p>
+      <p><em>– Andreus Pahs Morcaenus – Le Livre de Morca</em></p>
     </blockquote>
   </div>
 </div>
