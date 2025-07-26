@@ -250,6 +250,7 @@ body [data-callout=infobox] {
     border-color: rgba(255, 255, 255, 0.2);
     font-size: var(--infobox-font-size);
     margin: 0 auto;
+    padding: 0 !important;
     /*margin-left: 20px;*/
     float: right;
 }
@@ -260,6 +261,7 @@ body [data-callout="infobox"] .callout-title {
 
 body [data-callout="infobox"] .callout-content {
     background: transparent;
+    padding: 1em !important;
 }
 
 body [data-callout="infobox"] .edit-block-button {
