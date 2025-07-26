@@ -244,6 +244,11 @@ body:not(.css-settings-manager) .cm-callout:has([data-callout="infobox"]) .edit-
     display: none !important;
 }
 
+
+@media (max-width: 800px) [data-callout=infobox] {
+  margin-left: 0;
+}
+
 body:not(.css-settings-manager) [data-callout=infobox] {
     background: rgba(30, 20, 40, 0.4);
     border: 2px solid;
@@ -252,6 +257,7 @@ body:not(.css-settings-manager) [data-callout=infobox] {
     margin: 0 auto;
     /*margin-left: 20px;*/
     float: right;
+    padding: 20px;
 }
 
 body:not(.css-settings-manager) [data-callout="infobox"] .callout-title {
