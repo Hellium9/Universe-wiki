@@ -225,26 +225,26 @@ strong, b {
 
 /*** Wikipedia Infobox ***/
 
-body:not(.css-settings-manager) {
+body {
     --infobox-font-size: var(--font-smaller);
     --infobox-gap: 16px;
     --infobox-width: 256px;
 }
 
 
-body:not(.css-settings-manager) .cm-sizer:has([data-callout="infobox"]),
-body:not(.css-settings-manager) .markdown-preview-sizer:has([data-callout="infobox"]) {
+body .cm-sizer:has([data-callout="infobox"]),
+body .markdown-preview-sizer:has([data-callout="infobox"]) {
     --callout-padding: var(--size-4-2);
     --file-line-width: calc(700px + var(--infobox-width));
     --list-spacing: 0.125em;
     --table-header-size: 1em;
 }
 
-body:not(.css-settings-manager) .cm-callout:has([data-callout="infobox"]) .edit-block-button {
+body .cm-callout:has([data-callout="infobox"]) .edit-block-button {
     display: none !important;
 }
 
-body:not(.css-settings-manager) [data-callout=infobox] {
+body [data-callout=infobox] {
     background: rgba(30, 20, 40, 0.4);
     border: 2px solid;
     border-color: rgba(255, 255, 255, 0.2);
@@ -254,25 +254,25 @@ body:not(.css-settings-manager) [data-callout=infobox] {
     float: right;
 }
 
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-title {
+body [data-callout="infobox"] .callout-title {
     display: none !important;
 }
 
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content {
+body [data-callout="infobox"] .callout-content {
     background: transparent;
 }
 
-body:not(.css-settings-manager) [data-callout="infobox"] .edit-block-button {
+body [data-callout="infobox"] .edit-block-button {
     display: none;
 }
 
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content h2 {
+body [data-callout="infobox"] .callout-content h2 {
     font-size: 1.25em;
     margin: 0 0 var(--size-4-2);
     text-align: center;
 }
 
-body:not(.css-settings-manager) [data-callout=infobox] .callout-content h3 {
+body [data-callout=infobox] .callout-content h3 {
     background-color: rgba(30, 20, 40, 0.4);
     font-size: 1.0625em;
     margin: var(--size-4-1) 0 !important;
@@ -280,81 +280,69 @@ body:not(.css-settings-manager) [data-callout=infobox] .callout-content h3 {
     text-align: center;
 }
 
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content table,
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content p,
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content ol,
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content ul {
+body [data-callout="infobox"] .callout-content table,
+body [data-callout="infobox"] .callout-content p,
+body [data-callout="infobox"] .callout-content ol,
+body [data-callout="infobox"] .callout-content ul {
     margin: var(--size-4-2) 0;
 }
 
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content table {
+body [data-callout="infobox"] .callout-content table {
     width: 100%;
 }
 
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content thead {
+body [data-callout="infobox"] .callout-content thead {
     display: none;
 }
 
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content thead tr {
+body [data-callout="infobox"] .callout-content thead tr {
     border-bottom: 1px solid var(--background-modifier-border);
 }
 
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content td,
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content th {
+body [data-callout="infobox"] .callout-content td,
+body [data-callout="infobox"] .callout-content th {
     border-width: 0 !important;
     padding: var(--list-spacing) 0 var(--list-spacing) var(--callout-padding);
     padding-left: 6px;
     width: 65%;
 }
 
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content td:first-child,
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content th:first-child {
+body [data-callout="infobox"] .callout-content td:first-child,
+body [data-callout="infobox"] .callout-content th:first-child {
     font-weight: bold;
     padding: 0;
     text-align: right;
     width: 35%;
 }
 
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content p {
+body [data-callout="infobox"] .callout-content p {
     text-align: center;
     font-size: 0.8em;
 }
 
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content li {
+body [data-callout="infobox"] .callout-content li {
     line-height: var(--line-height-tight);
 }
 
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content p:has(.internal-embed) {
+body [data-callout="infobox"] .callout-content p:has(.internal-embed) {
     margin: 0;
 }
 
-body:not(.css-settings-manager) [data-callout="infobox"] .callout-content  .internal-embed {
+body [data-callout="infobox"] .callout-content  .internal-embed {
     border-radius: 0px;
 }
 
-body:not(.css-settings-manager):not(.is-mobile) .markdown-preview-sizer:has([data-callout="infobox"]),
-body:not(.css-settings-manager).is-tablet .markdown-preview-sizer:has([data-callout="infobox"]),
-body:not(.css-settings-manager):not(.is-mobile) .cm-contentContainer:has([data-callout="infobox"]) .cm-content,
-body:not(.css-settings-manager).is-tablet .cm-contentContainer:has([data-callout="infobox"]) .cm-content {
+body:not(.is-mobile) .markdown-preview-sizer:has([data-callout="infobox"]),
+body.is-tablet .markdown-preview-sizer:has([data-callout="infobox"]),
+body:not(.is-mobile) .cm-contentContainer:has([data-callout="infobox"]) .cm-content,
+body.is-tablet .cm-contentContainer:has([data-callout="infobox"]) .cm-content {
     position: relative;
 }
-/*
 
-body:not(.css-settings-manager):not(.is-mobile) .cm-contentContainer:has([data-callout="infobox"]) .cm-content,
-body:not(.css-settings-manager).is-tablet .cm-contentContainer:has([data-callout="infobox"]) .cm-content,
-body:not(.css-settings-manager):not(.is-mobile) .cm-contentContainer:has([data-callout="infobox"]) + .embedded-backlinks,
-body:not(.css-settings-manager).is-tablet .cm-contentContainer:has([data-callout="infobox"]) + .embedded-backlinks,
-body:not(.css-settings-manager):not(.is-mobile) .markdown-preview-sizer:has([data-callout="infobox"]) > div:not(.mod-header),
-body:not(.css-settings-manager).is-tablet .markdown-preview-sizer:has([data-callout="infobox"]) > div:not(.mod-header) {
-    //margin-right: calc(var(--infobox-width) + var(--infobox-gap));
-    //position: relative;
-    //margin-left: calc(var(--infobox-width) / 2);
-}*/
-
-body:not(.css-settings-manager):not(.is-mobile) .cm-callout:has([data-callout="infobox"]),
-body:not(.css-settings-manager).is-tablet .cm-callout:has([data-callout="infobox"]),
-body:not(.css-settings-manager):not(.is-mobile) .markdown-preview-sizer > div:has([data-callout="infobox"]),
-body:not(.css-settings-manager).is-tablet .markdown-preview-sizer > div:has([data-callout="infobox"]) {
+body:not(.is-mobile) .cm-callout:has([data-callout="infobox"]),
+body.is-tablet .cm-callout:has([data-callout="infobox"]),
+body:not(.is-mobile) .markdown-preview-sizer > div:has([data-callout="infobox"]),
+body.is-tablet .markdown-preview-sizer > div:has([data-callout="infobox"]) {
     /*//margin-bottom: var(--file-margins);*/
     margin-bottom: 20px;
     /*//position: absolute !important;*/
@@ -365,7 +353,7 @@ body:not(.css-settings-manager).is-tablet .markdown-preview-sizer > div:has([dat
     margin-left: 20px;
 }
 
-body:not(.css-settings-manager):not(.is-mobile) .show-inline-title .markdown-preview-sizer > div:has([data-callout="infobox"]),
-body:not(.css-settings-manager).is-tablet .show-inline-title .markdown-preview-sizer > div:has([data-callout="infobox"]) {
+body:not(.is-mobile) .show-inline-title .markdown-preview-sizer > div:has([data-callout="infobox"]),
+body.is-tablet .show-inline-title .markdown-preview-sizer > div:has([data-callout="infobox"]) {
     top: calc(var(--inline-title-size) * var(--inline-title-line-height) + 0.5em);
 }
