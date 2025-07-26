@@ -244,6 +244,25 @@ body .cm-callout:has([data-callout="infobox"]) .edit-block-button {
     display: none !important;
 }
 
+/* modible fix */
+@media (max-width: 767px) {
+    body [data-callout="infobox"] {
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block;
+    }
+
+    body .cm-callout:has([data-callout="infobox"]),
+    body .markdown-preview-sizer > div:has([data-callout="infobox"]) {
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block;
+    }
+}
+/* ----- */
+
 body [data-callout=infobox] {
     background: rgba(30, 20, 40, 0.4);
     border: 2px solid;
