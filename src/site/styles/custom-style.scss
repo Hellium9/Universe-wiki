@@ -159,6 +159,19 @@ body::after {
 
 /*** ------------------------------- ***/
 
+/*** CONTENT ***/
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 90px;
+    position: relative;
+}
+
+
+
 /*** TEXTE CUSTOM ***/
 
 /* ✨ Texte en italique */
@@ -237,7 +250,7 @@ body:not(.css-settings-manager) [data-callout=infobox] {
     border-color: rgba(255, 255, 255, 0.2);
     font-size: var(--infobox-font-size);
     margin: 0 auto;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     float: right;
 }
 
@@ -290,6 +303,7 @@ body:not(.css-settings-manager) [data-callout="infobox"] .callout-content td,
 body:not(.css-settings-manager) [data-callout="infobox"] .callout-content th {
     border-width: 0 !important;
     padding: var(--list-spacing) 0 var(--list-spacing) var(--callout-padding);
+    padding-left: 6px;
     width: 65%;
 }
 
@@ -347,7 +361,7 @@ body:not(.css-settings-manager).is-tablet .markdown-preview-sizer > div:has([dat
     float: right;
     /*//right: calc(-1 * (var(--infobox-width) + var(--infobox-gap)));*/
     top: 0px;
-    width: var(--infobox-width);
+    /*width: var(--infobox-width);*/
     margin-left: 20px;
 }
 
