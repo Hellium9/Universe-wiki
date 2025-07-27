@@ -4,13 +4,12 @@
 
 # Wiki
 ---
-### Mondes:
-Liste des Mondes répertoriés: 
 
 
 
 
 <details class="callout foldable" data-callout="foldable">   <summary class="callout-title"> Mondes </summary>
+<p>Liste des mondes répertoriés</p>
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
