@@ -9,7 +9,7 @@ details.callout[data-callout="foldable"] {
 }
 
 details.callout[data-callout="foldable"] .callout-icon,
-details.callout[data-callout="foldable"] .callout-fold, {
+details.callout[data-callout="foldable"] .callout-arrow, {
   display: none;
 }
 
@@ -21,14 +21,15 @@ details.callout[data-callout="foldable"] summary.callout-title {
   font-size: var(--h1-size) !important;
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 0.4em;
-  margin-bottom: 1em;
+  margin-bottom: 0;
   position: relative;
   cursor: pointer;
 }
 
 details.callout[data-callout="foldable"] .internal-embed:not(.image-embed) {
     display: block;
-    border-bottom: 2px solid var(--background-modifier-border);
+    border-bottom: 2px solid var(--hr-color);
+    padding: 0;
     padding-bottom: 0.4em;
 }
 
@@ -152,6 +153,7 @@ body::after {
     content: "";
     position: fixed;
     top: 0;
+    left: 0;
     /*left: 3%;*/
     background-color: var(--background-primary);
     opacity: 0.5;
