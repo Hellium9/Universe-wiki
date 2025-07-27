@@ -1,7 +1,7 @@
 /*** ONGLETS RÉTRACTABLES ***/
 /* <Details> */
 
-/*details.callout[data-callout="foldable"] {
+details.callout[data-callout="foldable"] {
   background: none;
   position: relative;
 }
@@ -54,7 +54,7 @@ details.callout[data-callout="foldable"][open] summary.callout-title::after {
 
 details.callout[data-callout="foldable"][open] summary.callout-title::before {
   transform: rotate(90deg);
-}*/
+}
 
 /* ![foldable]- */
 /*
