@@ -55,17 +55,17 @@ details.callout[data-callout="foldable"] .markdown-embed {
     padding: var(--embed-padding);
 }
 
-details.callout[data-callout="foldable"] summary.callout-title::after {
-  content: "▸";
-  position: relative;
-  left: 0.4em;
-  font-size: 0.9em;
-  transition: transform 0.2s ease;
-  opacity: 0.8;
+details.callout[data-callout=foldable] summary.callout-title::before {
+    content: "▸";
+    margin-right: 0.1em;
+    position: relative;
+    left: 0;
+    font-size: .9em;
+    transition: transform .2s ease;
 }
 
-details.callout[data-callout="foldable"][open] summary.callout-title::after {
-  transform: rotate(90deg);
+details.callout[data-callout="foldable"][open] summary.callout-title::before {
+    transform: rotate(90deg);
 }
 
 
