@@ -9,9 +9,20 @@ details.callout[data-callout="foldable"] {
 }
 
 details.callout[data-callout="foldable"] .callout-icon,
-details.callout[data-callout="foldable"] .callout-arrow, {
+details.callout[data-callout="foldable"] .callout-arrow,
+details.callout[data-callout="foldable"] .callout-fold {
   display: none;
 }
+
+/* Masquer le chevron par défaut de <summary> */
+details.callout[data-callout="foldable"] summary::-webkit-details-marker {
+  display: none;
+}
+
+details.callout[data-callout="foldable"] summary::marker {
+  display: none;
+}
+
 
 details.callout[data-callout="foldable"] summary.callout-title {
   display: flex;
