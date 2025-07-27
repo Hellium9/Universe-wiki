@@ -8,7 +8,8 @@ details.callout[data-callout="foldable"] {
   padding-right: 0;
 }
 
-details.callout[data-callout="foldable"] .callout-icon {
+details.callout[data-callout="foldable"] .callout-icon,
+details.callout[data-callout="foldable"] .callout-fold, {
   display: none;
 }
 
@@ -37,7 +38,7 @@ details.callout[data-callout="foldable"] .markdown-embed {
     border-top: var(--embed-border-top);
     border-right: var(--embed-border-right);
     border-bottom: var(--embed-border-bottom);
-    border-left: var(--embed-border-left);
+    border-left: none;
     margin: 0;
     padding: var(--embed-padding);
 }
@@ -151,14 +152,14 @@ body::after {
     content: "";
     position: fixed;
     top: 0;
-    left: 3%;
+    /*left: 3%;*/
     background-color: var(--background-primary);
-    opacity: 0.4;
+    opacity: 0.5;
     height: 100%;
-    width: 94%;
+    /*width: 94%;*/
     z-index: -1;
     /*background-color: rgba(0, 0, 0, 0.4);*/
-    /*width: 100vw;*/
+    width: 100vw;
 }
 
 /*** ------------------------------- ***/
