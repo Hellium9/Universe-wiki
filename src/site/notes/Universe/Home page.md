@@ -18,6 +18,19 @@
 
   </div> </details>
 
+<details class="callout foldable" data-callout="foldable">   <summary class="callout-title"> Espèces </summary>
+<p>Liste des espèces répertoriés</p>
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+<ul><span></span><li><a href="Universe/Espèces/- Espèces classifiées -.md" data-href="Universe/Espèces/- Espèces classifiées -.md" class="internal-link">- Espèces classifiées -</a></li><li><a href="Universe/Espèces/Deus Ex Lumina.md" data-href="Universe/Espèces/Deus Ex Lumina.md" class="internal-link">Deus Ex Lumina</a></li><li><a href="Universe/Espèces/Nimeonid.md" data-href="Universe/Espèces/Nimeonid.md" class="internal-link">Nimeonid</a></li><li><a href="Universe/Espèces/Sivers.md" data-href="Universe/Espèces/Sivers.md" class="internal-link">Sivers</a></li></ul>
+
+</div></div>
+
+  </div> </details>
+
 
 
 
