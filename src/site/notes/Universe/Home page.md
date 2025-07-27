@@ -10,7 +10,7 @@ Liste des Mondes répertoriés:
 
 
 
- Mondes Répertoriés 
+<details class="callout foldable" data-callout="foldable">   <summary class="callout-title"> Mondes Répertoriés </summary>
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
@@ -21,7 +21,7 @@ Liste des Mondes répertoriés:
 
 </div></div>
 
-
+  </div> </details>
 
 
 
