@@ -55,7 +55,7 @@ details.callout[data-callout="foldable"] .markdown-embed {
     padding: var(--embed-padding);
 }
 
-/*details.callout[data-callout="foldable"] summary.callout-title::after {
+details.callout[data-callout="foldable"] summary.callout-title::after {
   content: "▸";
   position: relative;
   left: 0.4em;
@@ -70,7 +70,7 @@ details.callout[data-callout="foldable"][open] summary.callout-title::after {
 
 details.callout[data-callout="foldable"][open] summary.callout-title::before {
   transform: rotate(90deg);
-}*/
+}
 
 /* ![foldable]- */
 /*
