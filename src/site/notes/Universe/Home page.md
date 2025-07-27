@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/universe/home-page/","tags":["gardenEntry"]}
 ---
 
-# Wiki
+# Catégories :
 ---
 
 <details class="callout foldable" data-callout="foldable">   <summary class="callout-title"> Mondes </summary>
