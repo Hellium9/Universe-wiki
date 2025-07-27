@@ -201,11 +201,19 @@ strong, b {
   font-weight: bold;
 }
 
-.markdown-rendered hr {
+/*.markdown-rendered hr {
+    border: none;
+    border-top: var(--hr-thickness) solid;
+    border-color: rgba(255, 255, 255, 0.2);
+}*/
+
+.callout[data-callout="infobox"] + hr {
+    clear: both;
     border: none;
     border-top: var(--hr-thickness) solid;
     border-color: rgba(255, 255, 255, 0.2);
 }
+
 
 /*** ------------------------------- ***/
 
