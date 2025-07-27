@@ -10,27 +10,102 @@ Liste des Mondes répertoriés:
 
 
 
-> [!foldable]- Mondes connus
-> 
->> [!foldable]- Cursed
->>
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/ressources/andreus-pahs-morcaenus-extraits/#z7147p" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+ Mondes Répertoriés 
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
 
 
-*Les Abysses ne sont pas les Enfers. Ce ne sont que les vestiges d’un passé fort lointain, où les larmes taries n’ont su descendre plus bas.*
-*- Andreus Pahs Morcaenus - Le Livre de Morca* 
+# Mondes
+```dvjs
+const TAG = "World";
+const pages = dv.pages().filter(p => p.tags && p.tags.includes(TAG));
+
+let nodes = new Map();
+
+// Étape 1 : Créer les nœuds
+for (let page of pages) {
+    const name = page.file.name;
+    let parent = null;
+
+    if (page.parent) {
+        if (typeof page.parent === "object" && page.parent.path) {
+            // ✅ On extrait le nom du fichier parent, sans le chemin
+            parent = page.parent.path.split("/").pop().replace(/\.md$/, "");
+        } else if (typeof page.parent === "string") {
+            parent = page.parent.replace(/\[\[|\]\]/g, "").trim();
+        }
+    }
+
+    if (!nodes.has(name)) {
+        nodes.set(name, { name: name, page: page, parent: parent, children: [] });
+    } else {
+        nodes.get(name).page = page;
+        nodes.get(name).parent = parent;
+    }
+
+    // Crée un nœud vide pour le parent s'il n'existe pas encore
+    if (parent && !nodes.has(parent)) {
+        nodes.set(parent, { name: parent, page: dv.page(parent), parent: null, children: [] });
+    }
+}
+
+// Étape 2 : Relier parents et enfants
+for (let node of nodes.values()) {
+    if (node.parent && nodes.has(node.parent)) {
+        nodes.get(node.parent).children.push(node);
+    }
+}
+
+// Étape 3 : Trouver les racines (ceux qui ne sont enfants de personne)
+const allChildren = new Set();
+for (let node of nodes.values()) {
+    for (let child of node.children) {
+        allChildren.add(child.name);
+    }
+}
+const roots = [...nodes.values()]
+    .filter(n => !allChildren.has(n.name) && n.page)
+    .sort((a, b) => a.name.localeCompare(b.name));
+
+// Fonction pour créer un lien Obsidian cliquable
+function makeLink(name) {
+    const file = app.metadataCache.getFirstLinkpathDest(name, "");
+    if (!file) return name;
+
+    const link = document.createElement("a");
+    link.href = file.path;
+    link.innerText = name;
+    link.dataset.href = file.path;
+    link.classList.add("internal-link");
+    return link;
+}
+
+// Rendu récursif
+function renderNode(node, parentEl) {
+    const li = parentEl.createEl("li");
+    li.append(makeLink(node.name));
+
+    if (node.children.length > 0) {
+        const ul = li.createEl("ul");
+        const sorted = node.children.sort((a, b) => a.name.localeCompare(b.name));
+        for (let child of sorted) {
+            renderNode(child, ul);
+        }
+    }
+}
+
+// Affichage
+const ul = dv.el("ul", "");
+for (let root of roots) {
+    renderNode(root, ul);
+}
+```
 
 </div></div>
 
->
->> [!foldable]- Note 2
->> Ceci est la note 2.
 
 
-
-
-%
 
 
 
