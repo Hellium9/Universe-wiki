@@ -4,6 +4,8 @@
 details.callout[data-callout="foldable"] {
   background: none;
   position: relative;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 details.callout[data-callout="foldable"] .callout-icon {
@@ -16,11 +18,10 @@ details.callout[data-callout="foldable"] summary.callout-title {
   font-weight: bold !important;
   color: var(--h1-color);
   font-size: var(--h1-size) !important;
-  border-bottom: 2px solid var(--background-modifier-border);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 0.4em;
   margin-bottom: 1em;
   position: relative;
-  padding-left: 1.5em;
   cursor: pointer;
 }
 
@@ -116,6 +117,7 @@ details.callout[data-callout="foldable"][open] summary.callout-title::before {
 .theme-dark {
     color-scheme: dark;
     --highlight-mix-blend-mode: normal;
+    --hr-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Shadow */
