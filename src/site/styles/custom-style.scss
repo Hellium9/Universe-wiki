@@ -200,6 +200,8 @@ strong, b {
 }
 
 .markdown-rendered hr {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
     border: none;
     border-top: var(--hr-thickness) solid;
     border-color: rgba(255, 255, 255, 0.2);
@@ -212,12 +214,12 @@ hr:last-of-type {
     border-color: rgba(255, 255, 255, 0.2);*/
 }
 
-h1{
+/*h1{
   overflow: hidden;
   padding-bottom: 0.4em;
   border-bottom: 2px solid;
   border-bottom-color: rgba(255, 255, 255, 0.2)
-}
+}*/
 
 /*** ------------------------------- ***/
 
