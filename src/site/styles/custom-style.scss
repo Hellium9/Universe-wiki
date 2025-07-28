@@ -201,19 +201,24 @@ strong, b {
   font-weight: bold;
 }
 
-/*.markdown-rendered hr {
-    border: none;
-    border-top: var(--hr-thickness) solid;
-    border-color: rgba(255, 255, 255, 0.2);
-}*/
-
-hr:last-of-type {
-    clear: both;
+.markdown-rendered hr {
     border: none;
     border-top: var(--hr-thickness) solid;
     border-color: rgba(255, 255, 255, 0.2);
 }
 
+hr:last-of-type {
+    clear: both;
+    /*border: none;
+    border-top: var(--hr-thickness) solid;
+    border-color: rgba(255, 255, 255, 0.2);*/
+}
+
+h1{
+  padding-bottom: 0.4em;
+  border-bottom: 2px solid;
+  border-bottom-color: rgba(255, 255, 255, 0.2)
+}
 
 /*** ------------------------------- ***/
 
