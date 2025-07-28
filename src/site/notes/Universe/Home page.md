@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/universe/home-page/","title":"Catégories","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/universe/home-page/","title":"Homepage","tags":["gardenEntry"]}
 ---
 
 # Catégories :
