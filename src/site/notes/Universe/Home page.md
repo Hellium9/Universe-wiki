@@ -1,14 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/universe/home-page/","tags":["gardenEntry"]}
+{"dg-publish":true,"permalink":"/universe/home-page/","title":"Catégories","tags":["gardenEntry"]}
 ---
 
 # Catégories :
-V7.0.3
-
 ---
 
 <details class="callout foldable" data-callout="foldable">   <summary class="callout-title"> Mondes </summary>
-<p>Liste des mondes répertoriés :</p>
+<p>Liste des mondes répertoriés</p>
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
@@ -21,7 +19,7 @@ V7.0.3
   </div> </details>
 
 <details class="callout foldable" data-callout="foldable">   <summary class="callout-title"> Espèces </summary>
-<p>Liste des espèces répertoriés :</p>
+<p>Liste des espèces répertoriés</p>
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
@@ -33,9 +31,6 @@ V7.0.3
 
   </div> </details>
 
-<details class="callout foldable" data-callout="foldable">   <summary class="callout-title"> Chronologie </summary>
-<p>Liste des événements chronologiques de notre réalité :</p>
-![[- Chronologie -#^list-chronology\|- Chronologie -#^list-chronology]]
-  </div> </details>
+
 
 
