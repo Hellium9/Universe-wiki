@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/universe/mondes/abysses/abysses/","tags":["Lore","Abysses","World"]}
+{"dg-publish":true,"permalink":"/universe/mondes/abysses/abysses/","tags":["World"]}
 ---
 
 ---
