@@ -2,8 +2,8 @@
 {"dg-publish":true,"permalink":"/universe/home-page/","title":"Homepage","tags":["gardenEntry"]}
 ---
 
+---
 
-# Title
 
 <details class="callout foldable" data-callout="foldable">   <summary class="callout-title"> Mondes </summary>
 <p>Liste des mondes répertoriés</p>
