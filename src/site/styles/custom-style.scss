@@ -177,7 +177,7 @@ strong, b {
 }
 
 .markdown-rendered hr {
-    margin-top: 0.4em;
+    margin-top: 0.2em;
     margin-bottom: 0.4em;
     border: none;
     border-top: var(--hr-thickness) solid;
@@ -191,12 +191,13 @@ hr:last-of-type {
     border-color: rgba(255, 255, 255, 0.2);*/
 }
 
-/*h1{
-  overflow: hidden;
+h1{
+  margin-bottom: 0;
+  /*overflow: hidden;
   padding-bottom: 0.4em;
   border-bottom: 2px solid;
-  border-bottom-color: rgba(255, 255, 255, 0.2)
-}*/
+  border-bottom-color: rgba(255, 255, 255, 0.2)*/
+}
 
 /*** ------------------------------- ***/
 
