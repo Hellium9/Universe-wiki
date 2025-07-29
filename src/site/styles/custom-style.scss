@@ -201,7 +201,7 @@ strong, b {
 
 .markdown-rendered hr {
     margin-top: 0.4em;
-    margin-bottom: 0.8em;
+    margin-bottom: 0.4em;
     border: none;
     border-top: var(--hr-thickness) solid;
     border-color: rgba(255, 255, 255, 0.2);
@@ -297,7 +297,7 @@ body [data-callout=infobox] {
     border: 2px solid;
     border-color: rgba(255, 255, 255, 0.2);
     font-size: var(--infobox-font-size);
-    margin: 12px 0px 20px 20px;
+    margin: 20px 0px 20px 20px;
     padding: 0 !important;
     /*margin-left: 20px;*/
     float: right;
