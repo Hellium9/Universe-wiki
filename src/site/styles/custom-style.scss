@@ -68,59 +68,36 @@ details.callout[data-callout="foldable"][open] summary.callout-title::before {
     transform: rotate(90deg);
 }
 
+/*** ------------------------------- ***/
 
-/* ![foldable]- */
-/*
-.markdown-preview-view [data-callout="foldable"] {
-  border-radius: 0px;
-  background: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  display: block !important;
-  padding-bottom: 0.85em !important;
+/*** TITLE INFO ***/
+body [data-callout="title-info"] {
+    background: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0.4em;
 }
 
-.markdown-preview-view [data-callout="foldable"] .callout-icon,
-.markdown-preview-view [data-callout="foldable"] .callout-fold {
-  opacity: 0;
+body [data-callout="title-info"] .callout-icon {
+  display: none;
 }
 
-.markdown-preview-view [data-callout="foldable"] .callout-title {
-  display: flex;
-  align-items: center;
-  font-weight: bold !important;
-  color: var(--h1-color);
-  font-size: var(--h1-size) !important;
-  position: relative;
-  padding-left: 0em;
-  cursor: pointer;
+body [data-callout="title-info"] .callout-title {
+    display: none;
+    font-size: 0.8em;
+    opacity: 0.4;
+    padding-left: 0.6em;
+    color: var(--text-color)
 }
 
-.markdown-preview-view [data-callout="foldable"] .callout-title {
-  border-bottom: var(--hr-thickness) solid;
-  border-color: rgba(255, 255, 255, 0.2);
-  padding-bottom: 0.4em;
-  margin-bottom: 0.4em;
+body [data-callout="title-info"] .callout-content p {
+    font-size: 0.8em;
+    opacity: 0.4;
+    margin: 0;
+    padding: 0;
+    padding-left: 0.6em;
+    color: var(--text-color)
 }
-
-.markdown-preview-view [data-callout="foldable"] .callout .callout-content {
-  border-bottom: var(--hr-thickness) solid;
-  border-color: rgba(255, 255, 255, 0.2);
-  padding-bottom: 1em;
-  margin-bottom: 0em;
-}
-
-.markdown-preview-view [data-callout="foldable"] .callout-title::before {
-  content: "▸";
-  display: inline-block;
-  transform: rotate(90deg); 
-  transition: transform 0.2s ease;
-  margin-right: 0em;
-}
-
-.markdown-preview-view [data-callout="foldable"].is-collapsed .callout-title::before {
-  transform: rotate(0deg);
-}*/
 
 /*** ------------------------------- ***/
 
