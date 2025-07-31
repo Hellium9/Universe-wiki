@@ -191,8 +191,9 @@ hr:last-of-type {
     border-color: rgba(255, 255, 255, 0.2);*/
 }
 
-h1{
+h1, h2, h3, h4 {
   margin-bottom: 0;
+  margin-top: 0;
   /*overflow: hidden;
   padding-bottom: 0.4em;
   border-bottom: 2px solid;
