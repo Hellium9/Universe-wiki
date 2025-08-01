@@ -173,6 +173,11 @@ body::after {
 
 /*** ------------------------------- ***/
 
+/*** SCROLLBAR ***/
+body {
+    scrollbar-gutter: stable both-edges;
+}
+
 /*** CONTENT ***/
 
 .content {
