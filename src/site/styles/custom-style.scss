@@ -60,20 +60,32 @@ details.callout[data-callout="foldable"] .markdown-embed {
     padding: var(--embed-padding);
 }
 
-details.callout[data-callout=foldable] summary.callout-title::before,
-details.callout[data-callout=foldable] summary.callout-subtitle::before {
-    content: "▸";
-    margin-right: 0.1em;
-    position: relative;
-    left: 0;
-    font-size: .9em;
-    transition: transform .2s ease;
+/* Chevron pour callout principal */
+details.callout[data-callout=foldable] > summary.callout-title::before {
+  content: "▸";
+  margin-right: 0.3em;
+  transform: rotate(0deg);
+  transition: transform 0.2s ease;
 }
 
-details.callout[data-callout="foldable"][open] summary.callout-title::before,
-details.callout[data-callout="foldable"][open] summary.callout-subtitle::before {
-    transform: rotate(90deg);
+/* Chevron tourné quand ouvert */
+details.callout[data-callout=foldable][open] > summary.callout-title::before {
+  transform: rotate(90deg);
 }
+
+/* Chevron pour sous-callout */
+details.callout[data-callout=foldable] > details.callout[data-callout=foldable] > summary.callout-subtitle::before {
+  content: "▸";
+  margin-right: 0.3em;
+  transform: rotate(0deg);
+  transition: transform 0.2s ease;
+}
+
+/* Chevron tourné quand sous-callout est ouvert */
+details.callout[data-callout=foldable] > details.callout[data-callout=foldable][open] > summary.callout-subtitle::before {
+  transform: rotate(90deg);
+}
+
 
 /*** ------------------------------- ***/
 
