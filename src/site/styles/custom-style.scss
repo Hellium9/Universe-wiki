@@ -24,7 +24,8 @@ details.callout[data-callout="foldable"] summary::marker {
 }
 
 
-details.callout[data-callout="foldable"] summary.callout-title {
+details.callout[data-callout="foldable"] summary.callout-title,
+details.callout[data-callout="foldable"] summary.callout-subtitle {
   display: flex;
   align-items: center;
   font-weight: bold !important;
@@ -35,6 +36,10 @@ details.callout[data-callout="foldable"] summary.callout-title {
   margin-bottom: 0;
   position: relative;
   cursor: pointer;
+}
+
+details.callout[data-callout="foldable"] summary.callout-subtitle {
+  font-size: var(--h4-size) !important;
 }
 
 details.callout[data-callout="foldable"] .internal-embed:not(.image-embed) {
@@ -55,7 +60,8 @@ details.callout[data-callout="foldable"] .markdown-embed {
     padding: var(--embed-padding);
 }
 
-details.callout[data-callout=foldable] summary.callout-title::before {
+details.callout[data-callout=foldable] summary.callout-title::before,
+details.callout[data-callout=foldable] summary.callout-subtitle::before {
     content: "▸";
     margin-right: 0.1em;
     position: relative;
@@ -64,7 +70,8 @@ details.callout[data-callout=foldable] summary.callout-title::before {
     transition: transform .2s ease;
 }
 
-details.callout[data-callout="foldable"][open] summary.callout-title::before {
+details.callout[data-callout="foldable"][open] summary.callout-title::before,
+details.callout[data-callout="foldable"][open] summary.callout-subtitle::before {
     transform: rotate(90deg);
 }
 
