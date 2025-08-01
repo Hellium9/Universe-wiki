@@ -4,10 +4,12 @@
 
 
 # Catégories
+v7.2.0
+
 ---
 
-
-<details class="callout foldable" data-callout="foldable">   <summary class="callout-title"> Mondes </summary>
+<details class="callout foldable" data-callout="foldable">
+<summary class="callout-title"> Mondes   </summary>
 <p>Liste des mondes répertoriés :</p>
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
@@ -18,9 +20,11 @@
 
 </div></div>
 
-  </div> </details>
+</div>
+</details>
 
-<details class="callout foldable" data-callout="foldable">   <summary class="callout-title"> Espèces </summary>
+<details class="callout foldable" data-callout="foldable">
+<summary class="callout-title"> Espèces   </summary>
 <p>Liste des espèces répertoriés :</p>
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
@@ -31,11 +35,12 @@
 
 </div></div>
 
-  </div> </details>
+</div>
+</details>
 
 <details class="callout foldable" data-callout="foldable">
 <summary class="callout-title">Chronologie  </summary>
-<p>Listes des différentes chronologie selon leur réalités :</p>
+<p>Listes des différentes chronologies selon leur réalité :</p>
 <details class="callout foldable" data-callout="foldable">
 <summary class="callout-subtitle">Chronologie Universelle  </summary>
 <p>Liste des événements prédominants de la chronologie Universelle de notre réalité :</p>
