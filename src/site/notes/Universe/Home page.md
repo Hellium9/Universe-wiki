@@ -8,7 +8,7 @@
 
 
 <details class="callout foldable" data-callout="foldable">   <summary class="callout-title"> Mondes </summary>
-<p>Liste des mondes répertoriés</p>
+<p>Liste des mondes répertoriés :</p>
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
@@ -21,7 +21,7 @@
   </div> </details>
 
 <details class="callout foldable" data-callout="foldable">   <summary class="callout-title"> Espèces </summary>
-<p>Liste des espèces répertoriés</p>
+<p>Liste des espèces répertoriés :</p>
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
@@ -33,6 +33,11 @@
 
   </div> </details>
 
+<details class="callout foldable" data-callout="foldable">
+  <summary class="callout-title">Chronologie</summary>
+  <p>Liste des événements historiques :</p>
+    
+</details>
 
 
 
