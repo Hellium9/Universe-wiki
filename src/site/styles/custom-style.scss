@@ -72,13 +72,15 @@ details.callout[data-callout="foldable"] .internal-embed:not(.image-embed) {
 
 details.callout[data-callout="foldable"] .markdown-embed {
     font-style: var(--embed-font-style);
-    background-color: var(--embed-background);
+    /*background-color: var(--embed-background);
     border-top: var(--embed-border-top);
     border-right: var(--embed-border-right);
-    border-bottom: var(--embed-border-bottom);
+    border-bottom: var(--embed-border-bottom);*/
     border-left: none;
     margin: 0;
     padding: var(--embed-padding);
+    padding-left: 0 !important;
+    background: grey;
 }
 
 /* Chevron pour callout principal */
