@@ -1,13 +1,14 @@
 /*** ONGLETS RÉTRACTABLES ***/
 /* <Details> */
 
-/*details.callout[data-callout="foldable"] h1,
-details.callout[data-callout="foldable"] h2,
-details.callout[data-callout="foldable"] h3,
-details.callout[data-callout="foldable"] h4 {
-  margin-bottom: 0 !important;
-  margin-top: 0 !important;
-}*/
+details.callout[data-callout="foldable"] .markdown-embed h1,
+details.callout[data-callout="foldable"] .markdown-embed h2,
+details.callout[data-callout="foldable"] .markdown-embed h3,
+details.callout[data-callout="foldable"] .markdown-embed h4,
+details.callout[data-callout="foldable"] .markdown-embed h5,
+details.callout[data-callout="foldable"] .markdown-embed h6 {
+  display: none;
+}
 
 body .content h1,
 body .content h2,
