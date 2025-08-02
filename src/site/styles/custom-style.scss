@@ -51,6 +51,7 @@ details.callout[data-callout="foldable"] summary.callout-subtitle {
   color: var(--h1-color);
   font-size: var(--h1-size) !important;
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0px;
   padding-bottom: 0.4em;
   padding-top: 0.4em;
   margin: 0;
@@ -221,25 +222,13 @@ strong, b {
 }
 
 .markdown-rendered hr {
-    margin-top: 0.2em;
-    margin-bottom: 0.4em;
+    /*margin-top: 0.2em;
+    margin-bottom: 0.4em;*/
+    margin: 0;
     border: none;
     border-top: var(--hr-thickness) solid;
     border-color: rgba(255, 255, 255, 0.2);
-}
-
-hr:last-of-type {
     clear: both;
-    /*border: none;
-    border-top: var(--hr-thickness) solid;
-    border-color: rgba(255, 255, 255, 0.2);*/
-}
-
-h1 {
-  /*overflow: hidden;
-  padding-bottom: 0.4em;
-  border-bottom: 2px solid;
-  border-bottom-color: rgba(255, 255, 255, 0.2)*/
 }
 
 /*** ------------------------------- ***/
