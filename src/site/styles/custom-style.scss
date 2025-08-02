@@ -1,5 +1,20 @@
 /*** ONGLETS RÉTRACTABLES ***/
 /* <Details> */
+details.callout[data-callout="foldable"] h1,
+details.callout[data-callout="foldable"] h2,
+details.callout[data-callout="foldable"] h3,
+details.callout[data-callout="foldable"] h4 {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+}
+
+body .content h1,
+body .content h2,
+body .content h3,
+body .content h4 {
+  margin-bottom: 0 !important;
+  margin-top: 0.4em !important;
+}
 
 details.callout[data-callout="foldable"] {
   background: none;
@@ -218,12 +233,7 @@ hr:last-of-type {
     border-color: rgba(255, 255, 255, 0.2);*/
 }
 
-body .content h1,
-body .content h2,
-body .content h3,
-body .content h4 {
-  margin-bottom: 0 !important;
-  margin-top: 0 !important;
+h1 {
   /*overflow: hidden;
   padding-bottom: 0.4em;
   border-bottom: 2px solid;
