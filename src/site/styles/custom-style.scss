@@ -330,7 +330,7 @@ body [data-callout="infobox"] .edit-block-button {
 
 body [data-callout="infobox"] .callout-content h2 {
     font-size: 1.25em;
-    margin: 0 0 var(--size-4-2);
+    margin: 0 0 var(--size-4-2) !important;
     text-align: center;
 }
 
