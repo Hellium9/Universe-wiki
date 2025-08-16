@@ -322,7 +322,8 @@ body .cm-callout:has([data-callout="infobox"]) .edit-block-button {
 /* ----- */
 
 body [data-callout=infobox] {
-    background: rgba(30, 20, 40, 0.4);
+    /*background: rgba(30, 20, 40, 0.4);*/
+    background: color-mix(in srgb, var(--background-secondary) 40%, transparent);
     border: 2px solid;
     border-color: rgba(255, 255, 255, 0.2);
     font-size: var(--infobox-font-size);
@@ -352,7 +353,8 @@ body [data-callout="infobox"] .callout-content h2 {
 }
 
 body [data-callout=infobox] .callout-content h3 {
-    background-color: rgba(30, 20, 40, 0.4);
+    /*background-color: rgba(30, 20, 40, 0.4);*/
+    background: color-mix(in srgb, var(--background-secondary) 40%, transparent);
     font-size: 1.0625em;
     margin: var(--size-4-1) 0 !important;
     padding: var(--size-2-1) var(--size-2-2);
