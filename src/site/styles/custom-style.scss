@@ -245,6 +245,8 @@ strong, b {
     display: flex;
     justify-content: center;
     padding: 0;
+    width: 100vw !important;
+    left: -10px !important;
 }
 
 /*** ------------------------------- ***/
