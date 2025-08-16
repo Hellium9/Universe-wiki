@@ -150,7 +150,19 @@ body [data-callout="title-info"] .callout-content p {
     color-scheme: dark;
     --highlight-mix-blend-mode: normal;
     --hr-color: rgba(255, 255, 255, 0.2);
-}
+    --background-primary: #2f3337;
+    --background-secondary: #181922;
+    --text-accent: #c3ff5d;
+    --text-accent-hover: #fffe2f;
+    --text-italic: #2fffda;
+    --interactive-accent: #c3ff5d;
+    /*--background-primary: #252334;
+    --background-secondary: #241b2f;
+    --text-accent: #f97e72;
+    --text-accent-hover: #ff7edb;
+    --text-italic: #2fffda;
+    --interactive-accent: #f97e72;
+    --text-italic: #00ffff; */
 
 /* Shadow */
 body {
@@ -170,7 +182,8 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: url("https://i.pinimg.com/736x/4e/e5/b7/4ee5b7b92f26439362eecedf4735ef0a.jpg") no-repeat center center;
+  /*background: url("https://i.pinimg.com/736x/4e/e5/b7/4ee5b7b92f26439362eecedf4735ef0a.jpg") no-repeat center center;*/
+  background: url("https://cs14.pikabu.ru/post_img/big/2021/07/18/6/162659816317890956.jpg") no-repeat center center;
   background-size: cover;
   filter: blur(10px);
   z-index: -1;
