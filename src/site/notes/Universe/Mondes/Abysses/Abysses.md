@@ -6,7 +6,7 @@
 ---
 
 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/ressources/andreus-pahs-morcaenus-extraits/#z7147p" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/universe/registre-des-annexes/extraits-le-livre-de-morca/#z7147p" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
@@ -15,11 +15,10 @@
 
 </div></div>
 
-
 ### Description
-Les Abysses sont une *anomalie dimensionnelle* qui prit forme suite aux conséquences de la **Grande Corruption**. Bien souvent considéré comme un seul et même lieu, les Abysses sont en réalité composées de plusieurs mondes qui autrefois gravitaient au sein de **l’Univers**.
+Les Abysses sont une *anomalie dimensionnelle* qui prit forme suite aux conséquences de [[Universe/Événement/La Grande Corruption\|La Grande Corruption]]. Bien souvent considéré comme un seul et même lieu, les Abysses sont en réalité composées de plusieurs mondes qui autrefois gravitaient au sein de **l’Univers**.
 
-Ces mondes furent engloutis dans le **Plan Astral**, pendant la **Grande Corruption**, où ils se désagrégèrent pour être remodelé peu à peu. La matière physique ne pouvant être dissoute complètement, les résidus finirent par couler lentement dans les profondeurs Astrales, s’agglomérant au fil du temps sous la forme de larges dépôts de matière instable.
+Ces mondes furent engloutis dans le **Plan Astral**, pendant [[Universe/Événement/La Grande Corruption\|La Grande Corruption]], où ils se désagrégèrent pour être remodelé peu à peu. La matière physique ne pouvant être dissoute complètement, les résidus finirent par couler lentement dans les profondeurs Astrales, s’agglomérant au fil du temps sous la forme de larges dépôts de matière instable.
 Après une descente millénaire, cette formation grandissante finit par franchir la frontière inférieur du **Plan Astral**, hors de toute lumière et de toute loi connue, donnant naissance à une structure énigmatique, suspendue sous *le voile du monde invisible*.
 
 
@@ -30,7 +29,7 @@ Les Abysses sont souvent décrit comme une tempête infernale mêlée aux flux d
 La description la plus détaillée provient du **Livre de Morca**, dressant une image très précise de la structure. Cependant beaucoup de spécialistes restent septiques quant à l’authenticité de cette description, car elle semble être faite depuis un point de vue extérieur à la dimension, ce qui en théorie semble absolument impossible.
 
 
-<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/ressources/andreus-pahs-morcaenus-extraits/#923u8b" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/universe/registre-des-annexes/extraits-le-livre-de-morca/#923u8b" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
 
 
 
@@ -42,7 +41,7 @@ La description la plus détaillée provient du **Livre de Morca**, dressant une 
 
 ### Structure Intérieure
 Le terme *"Système Abyssal"*  est employé pour désigner l’ensemble des mondes qui composent les Abysses, sous la forme d’un tout organisé.
-Ces mondes possèdent leur propres caractéristiques, ainsi que des propriétés physiques[^1] non naturelles, cela étant dû en grande partie au remodelage de la matière. Les formes de vies qui furent absorbées lors de **la Grande Corruption** subirent elles aussi de lourdes mutations, entraînant l’évolution et le développement d’une toute nouvelle faune.
+Ces mondes possèdent leur propres caractéristiques, ainsi que des propriétés physiques[^1] non naturelles, cela étant dû en grande partie au remodelage de la matière. Les formes de vies qui furent absorbées lors de [[Universe/Événement/La Grande Corruption\|La Grande Corruption]] subirent elles aussi de lourdes mutations, entraînant l’évolution et le développement d’une toute nouvelle faune.
 
 Bien que chaotique en apparence, des lois obscures semblent maintenir une cohésion au sein de la dimension. L’existence d’une toile reliant les mondes entre-eux avec des connexions complexe, laisse suggérer un grand niveau d’organisation semblable à **la Toile Sub-Spatiale** de **l’Univers**.
 
