@@ -1,3 +1,24 @@
+/* IMPORTANT - For Obsidian Interface */
+.workspace-tab-header.is-active, 
+.workspace-leaf-resize-handle,
+.is-focused .workspace-leaf.mod-active .view-header,
+.view-header,
+.workspace-ribbon,
+.workspace-leaf-content {
+  background: var(--background-primary);
+  border-color: var(--background-primary);
+}
+
+.workspace-split.mod-root .workspace-tab-header.is-active::before,
+.workspace-split.mod-root .workspace-tab-header.is-active::after,
+.mod-fade:not(.mod-at-end):after {
+  display: none;
+}
+
+/*** ------------------------------- ***/
+/*** ------------------------------- ***/
+/*** ------------------------------- ***/
+
 /*** ONGLETS RÉTRACTABLES ***/
 /* <Details> */
 
@@ -8,14 +29,6 @@ details.callout[data-callout="foldable"] .markdown-embed h4,
 details.callout[data-callout="foldable"] .markdown-embed h5,
 details.callout[data-callout="foldable"] .markdown-embed h6 {
   display: none;
-}
-
-body .content h1,
-body .content h2,
-body .content h3,
-body .content h4 {
-  margin-bottom: 0 !important;
-  margin-top: 1em !important;
 }
 
 details.callout[data-callout="foldable"] {
@@ -73,10 +86,6 @@ details.callout[data-callout="foldable"] .internal-embed:not(.image-embed) {
 
 details.callout[data-callout="foldable"] .markdown-embed {
     font-style: var(--embed-font-style);
-    /*background-color: var(--embed-background);
-    border-top: var(--embed-border-top);
-    border-right: var(--embed-border-right);
-    border-bottom: var(--embed-border-bottom);*/
     border-left: none;
     margin: 0;
     padding: var(--embed-padding);
@@ -110,10 +119,12 @@ details.callout[data-callout=foldable] > details.callout[data-callout=foldable][
   transform: rotate(90deg);
 }
 
-
 /*** ------------------------------- ***/
-
+/*** ------------------------------- ***/
+/*** ------------------------------- ***/
 /*** TITLE INFO ***/
+
+
 body [data-callout="title-info"] {
     background: none;
     margin: 0;
@@ -143,80 +154,75 @@ body [data-callout="title-info"] .callout-content p {
 }
 
 /*** ------------------------------- ***/
+/*** ------------------------------- ***/
+/*** ------------------------------- ***/
 
 /*** BACKGROUND + TRANSPARENT ***/
-
 .theme-dark {
     color-scheme: dark;
     --highlight-mix-blend-mode: normal;
     --hr-color: rgba(255, 255, 255, 0.2);
-    --background-primary: #2f3337;
+    --background-primary: #24292e;
     --background-secondary: #181922;
+    --background-secondary-alt: var(--background-secondary);
     --text-accent: #c3ff5d;
     --text-accent-hover: #fffe2f;
     --text-italic: #2fffda;
     --interactive-accent: #c3ff5d;
     --text-faint: #ffffff5e;
-    /*--background-primary: #252334;
-    --background-secondary: #241b2f;
-    --text-accent: #f97e72;
-    --text-accent-hover: #ff7edb;
-    --text-italic: #2fffda;
-    --interactive-accent: #f97e72;
-    --text-italic: #00ffff;
-    --text-faint: #706a76; */
+    --color-base-30: rgba(255, 255, 255, 0.4);
+    --color-base-40: #c3ff5d;
 }
 
-/* Shadow */
-body {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  background-color: var(--background-secondary);
-  /*color: white;*/
+/* To keep text over bg */
+.cm-editor,
+.markdown-rendered {
+  top: 0px !important;
   z-index: 1;
 }
 
-/* IMG */
-body::before {
+/* Background */
+.cm-s-obsidian::before,
+.markdown-reading-view::before {
   content: "";
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  top: -10;
+  left: -10;
+  width: 120vw;
+  height: 120vh;
   /*background: url("https://i.pinimg.com/736x/4e/e5/b7/4ee5b7b92f26439362eecedf4735ef0a.jpg") no-repeat center center;*/
   background: url("https://cs14.pikabu.ru/post_img/big/2021/07/18/6/162659816317890956.jpg") no-repeat center center;
   background-size: cover;
-  filter: blur(10px);
-  z-index: -1;
+  filter: blur(40px);
+  z-index: 0;
 }
 
 /* Dark */
-body::after {
+.cm-s-obsidian::after,
+.markdown-reading-view::after {
     content: "";
     position: fixed;
-    top: 0;
-    left: 0;
-    /*left: 3%;*/
+    top: -10;
+    left: -10;
+    width: 120vw;
+    height: 120vh;
     background-color: var(--background-primary);
-    opacity: 0.5;
-    height: 100%;
-    /*width: 94%;*/
-    z-index: -1;
-    /*background-color: rgba(0, 0, 0, 0.4);*/
-    width: 100vw;
+    opacity: 0.6;
+    z-index: 0;
 }
 
 /*** ------------------------------- ***/
+/*** ------------------------------- ***/
+/*** ------------------------------- ***/
 
-/*** SCROLLBAR ***/
+/*** COMPOSITION ***/
+
+/*** Scrollbar ***/
 body {
     scrollbar-gutter: stable both-edges;
 }
 
-/*** CONTENT ***/
-
+/*** Content ***/
 .content {
     max-width: 1000px;
     margin: auto;
@@ -226,30 +232,37 @@ body {
     position: relative;
 }
 
-/*** TEXTE CUSTOM ***/
-
-/* ✨ Texte en italique */
+/* Italic */
 em, i {
   color: #00ffff !important;
   font-style: italic;
 }
 
-/* 💪 Texte en gras */
+/* Bold */
 strong, b {
   color: var(--interactive-accent) !important;
   font-weight: bold;
 }
-
+/* Headers */
+body .content h1,
+body .content h2,
+body .content h3,
+body .content h4 {
+  margin-bottom: 0 !important;
+  margin-top: 1em !important;
+}
+h1, h2, h3, h4 {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+/* Lines */
 .markdown-rendered hr {
     margin-top: 0.4em;
-    margin-bottom: 0em;
+    margin-bottom: 1.4em;
     border: none;
     border-top: var(--hr-thickness) solid;
     border-color: rgba(255, 255, 255, 0.2);
-    clear: both;
 }
-
-/*** ------------------------------- ***/
 
 /*** TAGS ***/
 /*a.tag, .editor .cl-hashtag {
@@ -264,7 +277,11 @@ strong, b {
     padding: 0;
 }
 
-/*** ------------------------------- ***/
+/* Hide Yaml */
+.markdown-preview-sizer .inline-title,
+.markdown-preview-sizer .metadata-container {
+  display: none !important;
+}
 
 /*** LINKS ***/
 
@@ -280,15 +297,16 @@ strong, b {
 }
 
 /*** ------------------------------- ***/
+/*** ------------------------------- ***/
+/*** ------------------------------- ***/
 
 /*** Wikipedia Infobox ***/
 
 body {
     --infobox-font-size: var(--font-smaller);
     --infobox-gap: 16px;
-    --infobox-width: 256px;
+    --infobox-width: 272px;
 }
-
 
 body .cm-sizer:has([data-callout="infobox"]),
 body .markdown-preview-sizer:has([data-callout="infobox"]) {
@@ -302,35 +320,14 @@ body .cm-callout:has([data-callout="infobox"]) .edit-block-button {
     display: none !important;
 }
 
-/* modible fix */
-@media (max-width: 767px) {
-    body [data-callout="infobox"] {
-        float: none !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        display: block;
-    }
-
-    body .cm-callout:has([data-callout="infobox"]),
-    body .markdown-preview-sizer > div:has([data-callout="infobox"]) {
-        float: none !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
-        display: block;
-    }
-}
-/* ----- */
-
-body [data-callout=infobox] {
-    /*background: rgba(30, 20, 40, 0.4);*/
-    background: color-mix(in srgb, var(--background-secondary) 40%, transparent);
+body [data-callout="infobox"] {
     border: 2px solid;
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: rgb(255, 255, 255, 0.2) !important;
+    background: color-mix(in srgb, var(--background-secondary) 40%, transparent) !important;
     font-size: var(--infobox-font-size);
-    margin: 20px 0px 20px 20px;
-    padding: 0 !important;
-    /*margin-left: 20px;*/
-    float: right;
+    margin: 0px 0px 20px 20px;
+    padding: 1px0 !important;
+    margin-left: 20px;
 }
 
 body [data-callout="infobox"] .callout-title {
@@ -339,7 +336,7 @@ body [data-callout="infobox"] .callout-title {
 
 body [data-callout="infobox"] .callout-content {
     background: transparent;
-    padding: 1em !important;
+    /*padding: 1em !important;*/
 }
 
 body [data-callout="infobox"] .edit-block-button {
@@ -361,6 +358,7 @@ body [data-callout=infobox] .callout-content h3 {
     text-align: center;
 }
 
+
 body [data-callout="infobox"] .callout-content table,
 body [data-callout="infobox"] .callout-content p,
 body [data-callout="infobox"] .callout-content ol,
@@ -380,11 +378,10 @@ body [data-callout="infobox"] .callout-content thead tr {
     border-bottom: 1px solid var(--background-modifier-border);
 }
 
-body [data-callout="infobox"] .callout-content td,
-body [data-callout="infobox"] .callout-content th {
+body [data-callout="infobox"] .callout-content th,
+body [data-callout="infobox"] .callout-content td {
     border-width: 0 !important;
     padding: var(--list-spacing) 0 var(--list-spacing) var(--callout-padding);
-    padding-left: 6px;
     width: 65%;
 }
 
@@ -398,7 +395,6 @@ body [data-callout="infobox"] .callout-content th:first-child {
 
 body [data-callout="infobox"] .callout-content p {
     text-align: center;
-    font-size: 0.8em;
 }
 
 body [data-callout="infobox"] .callout-content li {
@@ -410,13 +406,22 @@ body [data-callout="infobox"] .callout-content p:has(.internal-embed) {
 }
 
 body [data-callout="infobox"] .callout-content  .internal-embed {
-    border-radius: 0px;
+    border-radius: 0;
 }
 
 body:not(.is-mobile) .markdown-preview-sizer:has([data-callout="infobox"]),
 body.is-tablet .markdown-preview-sizer:has([data-callout="infobox"]),
+body:not(.is-mobile) .markdown-preview-sizer:has([data-callout="infobox"]) {
+    position: relative;
+}
+
 body:not(.is-mobile) .cm-contentContainer:has([data-callout="infobox"]) .cm-content,
-body.is-tablet .cm-contentContainer:has([data-callout="infobox"]) .cm-content {
+body.is-tablet .cm-contentContainer:has([data-callout="infobox"]) .cm-content,
+body:not(.is-mobile) .cm-contentContainer:has([data-callout="infobox"]) + .embedded-backlinks,
+body.is-tablet .cm-contentContainer:has([data-callout="infobox"]) + .embedded-backlinks,
+body:not(.is-mobile) .markdown-preview-sizer:has([data-callout="infobox"]) > div:not(.mod-header),
+body.is-tablet .markdown-preview-sizer:has([data-callout="infobox"]) > div:not(.mod-header) {
+    margin-right: calc(var(--infobox-width) + var(--infobox-gap));
     position: relative;
 }
 
@@ -424,14 +429,11 @@ body:not(.is-mobile) .cm-callout:has([data-callout="infobox"]),
 body.is-tablet .cm-callout:has([data-callout="infobox"]),
 body:not(.is-mobile) .markdown-preview-sizer > div:has([data-callout="infobox"]),
 body.is-tablet .markdown-preview-sizer > div:has([data-callout="infobox"]) {
-    /*//margin-bottom: var(--file-margins);*/
-    margin-bottom: 20px;
-    /*//position: absolute !important;*/
-    float: right;
-    /*//right: calc(-1 * (var(--infobox-width) + var(--infobox-gap)));*/
-    top: 0px;
-    /*width: var(--infobox-width);*/
-    margin-left: 20px;
+    margin-bottom: var(--file-margins);
+    position: absolute !important;
+    right: calc(-1 * (var(--infobox-width) + var(--infobox-gap)));
+    top: var(--file-margins);
+    width: var(--infobox-width);
 }
 
 body:not(.is-mobile) .show-inline-title .markdown-preview-sizer > div:has([data-callout="infobox"]),
