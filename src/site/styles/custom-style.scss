@@ -380,10 +380,11 @@ body [data-callout="infobox"] .callout-content thead tr {
     border-bottom: 1px solid var(--background-modifier-border);
 }
 
-body [data-callout="infobox"] .callout-content th,
-body [data-callout="infobox"] .callout-content td {
+body [data-callout="infobox"] .callout-content td,
+body [data-callout="infobox"] .callout-content th {
     border-width: 0 !important;
     padding: var(--list-spacing) 0 var(--list-spacing) var(--callout-padding);
+    padding-left: 6px;
     width: 65%;
 }
 
@@ -397,6 +398,7 @@ body [data-callout="infobox"] .callout-content th:first-child {
 
 body [data-callout="infobox"] .callout-content p {
     text-align: center;
+    font-size: 0.8em;
 }
 
 body [data-callout="infobox"] .callout-content li {
@@ -408,7 +410,7 @@ body [data-callout="infobox"] .callout-content p:has(.internal-embed) {
 }
 
 body [data-callout="infobox"] .callout-content  .internal-embed {
-    border-radius: 0;
+    border-radius: 0px;
 }
 
 /*body:not(.is-mobile) .markdown-preview-sizer:has([data-callout="infobox"]),
