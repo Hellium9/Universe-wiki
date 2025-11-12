@@ -143,7 +143,7 @@ body [data-callout="title-info"] .callout-content p {
     --hr-color: rgba(255, 255, 255, 0.2);
     --background-primary: #24292e;
     --background-secondary: #181922;
-    --background-secondary-alt: var(--background-secondary);
+    --background-secondary-alt: #181922;
     --text-accent: #c3ff5d;
     --text-accent-hover: #fffe2f;
     --text-italic: #2fffda;
@@ -173,7 +173,8 @@ body {
   width: 120vw;
   height: 120vh;
   /*background: url("https://i.pinimg.com/736x/4e/e5/b7/4ee5b7b92f26439362eecedf4735ef0a.jpg") no-repeat center center;*/
-  background: url("https://cs14.pikabu.ru/post_img/big/2021/07/18/6/162659816317890956.jpg") no-repeat center center;
+  /*background: url("https://cs14.pikabu.ru/post_img/big/2021/07/18/6/162659816317890956.jpg") no-repeat center center;*/
+  background: linear-gradient(180deg, var(--background-secondary) 0%, var(--text-accent) 80%);
   background-size: cover;
   filter: blur(40px);
   z-index: -1;
@@ -257,6 +258,7 @@ h1, h2, h3, h4 {
     display: flex;
     justify-content: center;
     padding: 0;
+    background-color: var(--background-secondary-alt);
 }
 
 /* Hide Yaml */
