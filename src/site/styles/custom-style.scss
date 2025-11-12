@@ -322,6 +322,7 @@ body .markdown-preview-sizer:has([data-callout="infobox"]) {
 /* modible fix */
 @media (max-width: 767px) {
     body [data-callout="infobox"] {
+        position: relative !important;  
         float: none !important;
         margin-left: auto !important;
         margin-right: auto !important;
@@ -343,7 +344,10 @@ body .cm-callout:has([data-callout="infobox"]) .edit-block-button {
 }
 
 body [data-callout="infobox"] {
-    float: right;
+    position: absolute;
+    top: 0px;
+    right: -20rem;
+    /*float: right;*/
     border: 2px solid;
     border-color: rgb(255, 255, 255, 0.2) !important;
     background: color-mix(in srgb, var(--background-secondary) 40%, transparent) !important;
