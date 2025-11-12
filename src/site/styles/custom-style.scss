@@ -153,6 +153,16 @@ body [data-callout="title-info"] .callout-content p {
     --color-base-40: #c3ff5d;
 }
 
+/* Shadow */
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: var(--background-secondary);
+  /*color: white;*/
+  z-index: 1;
+}
+
 /* Background */
 .cm-s-obsidian::before,
 .markdown-reading-view::before {
@@ -288,16 +298,36 @@ body .markdown-preview-sizer:has([data-callout="infobox"]) {
     --table-header-size: 1em;
 }
 
+/* modible fix */
+@media (max-width: 767px) {
+    body [data-callout="infobox"] {
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block;
+    }
+
+    body .cm-callout:has([data-callout="infobox"]),
+    body .markdown-preview-sizer > div:has([data-callout="infobox"]) {
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block;
+    }
+}
+/* ----- */
+
 body .cm-callout:has([data-callout="infobox"]) .edit-block-button {
     display: none !important;
 }
 
 body [data-callout="infobox"] {
+    float: right;
     border: 2px solid;
     border-color: rgb(255, 255, 255, 0.2) !important;
     background: color-mix(in srgb, var(--background-secondary) 40%, transparent) !important;
     font-size: var(--infobox-font-size);
-    margin: 0px 0px 20px 20px;
+    margin: 20px 0px 20px 20px;
     padding: 10px !important;
     margin-left: 20px;
 }
