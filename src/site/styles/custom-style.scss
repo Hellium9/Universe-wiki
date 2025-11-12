@@ -158,8 +158,8 @@ body [data-callout="title-info"] .callout-content p {
 .markdown-reading-view::before {
   content: "";
   position: fixed;
-  top: -10;
-  left: -10;
+  top: -10px;
+  left: -10px;
   width: 120vw;
   height: 120vh;
   /*background: url("https://i.pinimg.com/736x/4e/e5/b7/4ee5b7b92f26439362eecedf4735ef0a.jpg") no-repeat center center;*/
@@ -174,8 +174,8 @@ body [data-callout="title-info"] .callout-content p {
 .markdown-reading-view::after {
     content: "";
     position: fixed;
-    top: -10;
-    left: -10;
+    top: -10px;
+    left: -10px;
     width: 120vw;
     height: 120vh;
     background-color: var(--background-primary);
@@ -298,7 +298,7 @@ body [data-callout="infobox"] {
     background: color-mix(in srgb, var(--background-secondary) 40%, transparent) !important;
     font-size: var(--infobox-font-size);
     margin: 0px 0px 20px 20px;
-    padding: 1px0 !important;
+    padding: 10px !important;
     margin-left: 20px;
 }
 
@@ -381,26 +381,30 @@ body [data-callout="infobox"] .callout-content  .internal-embed {
     border-radius: 0;
 }
 
-body:not(.is-mobile) .markdown-preview-sizer:has([data-callout="infobox"]),
+/*body:not(.is-mobile) .markdown-preview-sizer:has([data-callout="infobox"]),
 body.is-tablet .markdown-preview-sizer:has([data-callout="infobox"]),
-body:not(.is-mobile) .markdown-preview-sizer:has([data-callout="infobox"]) {
+body:not(.is-mobile) .markdown-preview-sizer:has([data-callout="infobox"])*/
+body .markdown-preview-sizer:has([data-callout="infobox"]){
     position: relative;
 }
 
+/*
 body:not(.is-mobile) .cm-contentContainer:has([data-callout="infobox"]) .cm-content,
 body.is-tablet .cm-contentContainer:has([data-callout="infobox"]) .cm-content,
 body:not(.is-mobile) .cm-contentContainer:has([data-callout="infobox"]) + .embedded-backlinks,
 body.is-tablet .cm-contentContainer:has([data-callout="infobox"]) + .embedded-backlinks,
 body:not(.is-mobile) .markdown-preview-sizer:has([data-callout="infobox"]) > div:not(.mod-header),
-body.is-tablet .markdown-preview-sizer:has([data-callout="infobox"]) > div:not(.mod-header) {
+body.is-tablet .markdown-preview-sizer:has([data-callout="infobox"]) > div:not(.mod-header) */
+body .markdown-preview-sizer:has([data-callout="infobox"]) > div:not(.mod-header) {
     margin-right: calc(var(--infobox-width) + var(--infobox-gap));
     position: relative;
 }
 
-body:not(.is-mobile) .cm-callout:has([data-callout="infobox"]),
+/*body:not(.is-mobile) .cm-callout:has([data-callout="infobox"]),
 body.is-tablet .cm-callout:has([data-callout="infobox"]),
 body:not(.is-mobile) .markdown-preview-sizer > div:has([data-callout="infobox"]),
-body.is-tablet .markdown-preview-sizer > div:has([data-callout="infobox"]) {
+body.is-tablet .markdown-preview-sizer > div:has([data-callout="infobox"])*/
+body .markdown-preview-sizer > div:has([data-callout="infobox"]) {
     margin-bottom: var(--file-margins);
     position: absolute !important;
     right: calc(-1 * (var(--infobox-width) + var(--infobox-gap)));
