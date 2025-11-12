@@ -137,6 +137,8 @@ body [data-callout="title-info"] .callout-content p {
 /*** ------------------------------- ***/
 
 /*** BACKGROUND + TRANSPARENT ***/
+/* Style green */
+/*
 .theme-dark {
     color-scheme: dark;
     --highlight-mix-blend-mode: normal;
@@ -148,6 +150,23 @@ body [data-callout="title-info"] .callout-content p {
     --text-accent-hover: #fffe2f;
     --text-italic: #2fffda;
     --interactive-accent: #c3ff5d;
+    --text-faint: #ffffff5e;
+    --color-base-30: rgba(255, 255, 255, 0.4);
+    --color-base-40: #c3ff5d;
+}*/
+
+/* Style Neutral */
+.theme-dark {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: normal;
+    --hr-color: rgba(255, 255, 255, 0.2);
+    --background-primary: #1a1a1a;
+    --background-secondary: #0c0c0c;
+    --background-secondary-alt: #0c0c0c;
+    --text-accent: #ffc500;
+    --text-accent-hover: #fffe2f;
+    --text-italic: #fa005a;
+    --interactive-accent: #fa005a;
     --text-faint: #ffffff5e;
     --color-base-30: rgba(255, 255, 255, 0.4);
     --color-base-40: #c3ff5d;
@@ -174,7 +193,7 @@ body {
   height: 120vh;
   /*background: url("https://i.pinimg.com/736x/4e/e5/b7/4ee5b7b92f26439362eecedf4735ef0a.jpg") no-repeat center center;*/
   /*background: url("https://cs14.pikabu.ru/post_img/big/2021/07/18/6/162659816317890956.jpg") no-repeat center center;*/
-  background: linear-gradient(180deg, var(--background-secondary) 0%, var(--text-accent) 80%);
+  background: linear-gradient(0deg, var(--background-secondary) 0%, var(--background-primary) 80%);
   background-size: cover;
   filter: blur(40px);
   z-index: -1;
@@ -190,7 +209,7 @@ body {
     width: 120vw;
     height: 120vh;
     background-color: var(--background-primary);
-    opacity: 0.6;
+    opacity: 0;
     z-index: -1;
 }
 
@@ -217,7 +236,7 @@ body {
 
 /* Italic */
 em, i {
-  color: #00ffff !important;
+  color: var(--text-italic) !important;
   font-style: italic;
 }
 
