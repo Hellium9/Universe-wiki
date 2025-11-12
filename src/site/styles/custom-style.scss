@@ -344,10 +344,7 @@ body .cm-callout:has([data-callout="infobox"]) .edit-block-button {
 }
 
 body [data-callout="infobox"] {
-    position: absolute;
-    top: 0px;
-    right: -20rem;
-    /*float: right;*/
+    float: right;
     border: 2px solid;
     border-color: rgb(255, 255, 255, 0.2) !important;
     background: color-mix(in srgb, var(--background-secondary) 40%, transparent) !important;
