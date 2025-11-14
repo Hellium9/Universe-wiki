@@ -367,10 +367,19 @@ body [data-callout="infobox"] .edit-block-button {
     display: none;
 }
 
-body [data-callout="infobox"] .callout-content h2 {
+/*body [data-callout="infobox"] .callout-content h2 {
     font-size: 1.25em;
     margin: 0 0 var(--size-4-2) !important;
     text-align: center;
+}*/
+
+body [data-callout=infobox] .callout-content h2 {
+    font-size: 1.25em;
+    margin: -5px 0 var(--size-4-2) !important;
+    text-align: center;
+    background: var(--background-secondary);
+    padding: 10px;
+    color: var(--text-accent);
 }
 
 body [data-callout=infobox] .callout-content h3 {
