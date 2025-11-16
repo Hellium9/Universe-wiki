@@ -75,18 +75,19 @@ details.callout[data-callout="foldable"] summary::marker {
 }
 
 
-details.callout[data-callout="foldable"] summary.callout-title,
-details.callout[data-callout="foldable"] summary.callout-subtitle {
+details.callout[data-callout=foldable] summary.callout-title,
+details.callout[data-callout=foldable] summary.callout-subtitle {
   display: flex;
   align-items: center;
   font-weight: bold !important;
   color: var(--h1-color);
   font-size: var(--h1-size) !important;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 2px solid rgba(255, 255, 255, .2);
   border-radius: 0px;
-  padding-bottom: 0.4em;
-  padding-top: 0.4em;
+  padding-bottom: 0.8em;
+  /* padding-top: .4em; */
   margin: 0;
+  margin-bottom: 0.8em;
   position: relative;
   cursor: pointer;
 }
