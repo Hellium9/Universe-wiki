@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/universe/mondes/abysses/abysses/","tags":["World"]}
+{"dg-publish":true,"permalink":"/universe/mondes/abysses/abysses/","tags":["Lore","World"]}
 ---
 
 # Abysses
@@ -14,6 +14,7 @@
 *- Andreus Pahs Morcaenus - Le Livre de Morca* 
 
 </div></div>
+
 
 ### Description
 Les Abysses sont une *anomalie dimensionnelle* qui prit forme suite aux conséquences de [[Universe/Événement/La Grande Corruption\|La Grande Corruption]]. Bien souvent considéré comme un seul et même lieu, les Abysses sont en réalité composées de plusieurs mondes qui autrefois gravitaient au sein de **l’Univers**.

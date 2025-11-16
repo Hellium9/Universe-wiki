@@ -1,0 +1,92 @@
+---
+{"dg-publish":true,"permalink":"/home-page/","title":"Homepage","tags":["gardenEntry"]}
+---
+
+
+# Catégories
+v7.2.1
+
+---
+
+<details class="callout foldable" data-callout="foldable">
+<summary class="callout-title"> Mondes   </summary>
+<p>Liste des mondes répertoriés :</p>
+
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+<ul><li><a href="/universe/mondes/abysses/abysses/" data-href="Universe/Mondes/Abysses/Abysses.md" class="internal-link">Abysses</a><ul><li><a href="/universe/mondes/abysses/abysses#les-abysses-rouges/" data-href="Universe/Mondes/Abysses/Abysses.md#Les Abysses Rouges" class="internal-link">Niveau 1 :</a><ul><li>Necrofor</li><li><a href="/universe/mondes/abysses/nedenfor/" data-href="Universe/Mondes/Abysses/Nedenfor.md" class="internal-link">Nedenfor</a></li><li>Valkrag</li></ul></li><li><a href="/universe/mondes/abysses/abysses#les-abysses-bleues/" data-href="Universe/Mondes/Abysses/Abysses.md#Les Abysses Bleues" class="internal-link">Niveau 2 :</a><ul><li>Ankra</li><li><a href="/universe/mondes/abysses/asalvadah/" data-href="Universe/Mondes/Abysses/Asalvadah.md" class="internal-link">Asalvadah</a></li><li>Dedallus</li><li>Necrofor</li><li>Nihil</li><li>Reh’ leth / Ryloth</li><li>Sûl Sanctum</li></ul></li><li><a href="/universe/mondes/abysses/abysses#les-abysses-noirs/" data-href="Universe/Mondes/Abysses/Abysses.md#Les Abysses Noirs" class="internal-link">Niveau 3 :</a><ul><li>Exeuntium</li><li>Nÿrheim</li></ul></li></ul></li><li>Second Horizon<ul><li>Addenyd</li></ul></li><li>Univers<ul><li><a href="/universe/mondes/stellaire/espaces/espace-1/" data-href="Universe/Mondes/Stellaire/Espaces/Espace 1.md" class="internal-link">Espace 1</a><ul><li><a href="/universe/mondes/stellaire/galaxies/voie-lactée/" data-href="Universe/Mondes/Stellaire/Galaxies/Voie Lactée.md" class="internal-link">Voie Lactée</a><ul><li><a href="/universe/mondes/stellaire/planètes/terra/" data-href="Universe/Mondes/Stellaire/Planètes/Terra.md" class="internal-link">Terra</a></li></ul></li></ul></li></ul></li></ul>
+
+</div></div>
+
+
+</div>
+</details>
+
+
+
+<details class="callout foldable" data-callout="foldable">
+<summary class="callout-title"> Espèces   </summary>
+<p>Liste des espèces répertoriés :</p>
+
+
+<div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
+
+
+
+<ul><li>Ådla</li><li><a href="/universe/espèces/aingeals/" data-href="Universe/Espèces/Aingeals.md" class="internal-link">Aingeals</a></li><li><a href="/universe/espèces/alfayn/" data-href="Universe/Espèces/Alfayn.md" class="internal-link">Alfayn</a><ul><li>Ashgayn</li><li>Elgayn / Elkayn</li><li>Istgayn / Ishgayn</li><li>Krayn</li><li>Naayn</li><li>Syvayn / Sylvayn / Sylfayn</li><li>Ulgayn</li><li>Zefayn</li></ul></li><li>Animata / Exeeds</li><li>Arthropodes</li><li>Ayleeth</li><li>Beasts +<ul><li>Canidae</li><li>Equidae</li><li>Felidae</li><li>Leporidae</li><li>Ursidae</li></ul></li><li>Deamons / Hellions / Daemas / Daemos</li><li><a href="/universe/espèces/deus-ex-lumina/" data-href="Universe/Espèces/Deus Ex Lumina.md" class="internal-link">Deus Ex Lumina</a></li><li>Dragons +</li><li>Eidolon</li><li>Élémentaires +</li><li>Exnoctis</li><li>Fées<ul><li>Elyns</li><li>Nymphes</li><li>Pixies</li><li>Sprites</li></ul></li><li>Fleya</li><li>Géants +</li><li>Grandbeasts +</li><li>Green Skins<ul><li>Goblins</li><li>Hobgoblin</li><li>Ogres</li><li>Orks</li><li>Trolls</li></ul></li><li>Halfbeasts +</li><li>Ignis Fatuus</li><li>Kobolds</li><li>Kreegull</li><li>Les Grands Anciens</li><li>Lizards / Repthilian / Saarun</li><li>Nains / Nibelungen</li><li>Necron</li><li>Necrurrian</li><li><a href="/universe/espèces/nimeonid/" data-href="Universe/Espèces/Nimeonid.md" class="internal-link">Nimeonid</a> / Ex Machina</li><li>Nyxes / Sirènes</li><li>Salamender</li><li>Shibiki +</li><li><a href="/universe/espèces/sivers/" data-href="Universe/Espèces/Sivers.md" class="internal-link">Sivers</a></li><li>Skarn</li><li>Spectres +</li><li>Vampires ❌ Dhampeal / Drakennir / Vampeal / Draenpir / Vaempir / Vorleeth / Dhampvorn</li><li><a href="/universe/espèces/veshkraal/" data-href="Universe/Espèces/Veshkraal.md" class="internal-link">Veshkraal</a></li></ul>
+
+</div></div>
+
+
+</div>
+</details>
+
+
+
+<details class="callout foldable" data-callout="foldable">
+<summary class="callout-title">Chronologie  </summary>
+<p>Listes des différentes chronologies selon leur réalité :</p>
+<details class="callout foldable" data-callout="foldable">
+<summary class="callout-subtitle">Chronologie Universelle  </summary>
+<p>Liste des événements prédominants de la chronologie Universelle de notre réalité :</p>
+
+
+<div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/universe/evenement/chronologies/#chronologie-universelle" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
+
+
+
+### Chronologie Universelle
+
+- L'Avant Heim
+- Le Premier Âge
+  - La Genèse
+  - La Grande Abondance
+  - La Grande Corruption
+- Le Deuxième Âge
+  - La Purge Céleste
+  - La Guerre des Anges
+  - Le Repeuplement
+  - Le Schisme des Alfayn 
+  - 
+
+</div></div>
+
+
+</div>
+</details>
+</details>
+
+
+- [[Universe/Mondes/Abysses/Abysses\|Abysses]]
+- [[Universe/Mondes/Abysses/Nedenfor\|Nedenfor]]
+- [[Universe/Espèces/Veshkraal\|Veshkraal]]
+
+{ .block-language-dataview}
+
+
+
+
+

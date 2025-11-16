@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/universe/mondes/abysses/nedenfor/","tags":["World"]}
+{"dg-publish":true,"permalink":"/universe/mondes/abysses/nedenfor/","tags":["Lore","World"]}
 ---
 
 
