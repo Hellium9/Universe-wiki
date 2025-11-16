@@ -1,3 +1,42 @@
+/* Style green */
+/*
+.theme-dark {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: normal;
+    --hr-color: rgba(255, 255, 255, 0.2);
+    --background-primary: #24292e;
+    --background-secondary: #181922;
+    --background-secondary-alt: #181922;
+    --text-accent: #c3ff5d;
+    --text-accent-hover: #fffe2f;
+    --text-italic: #2fffda;
+    --interactive-accent: #c3ff5d;
+    --text-faint: #ffffff5e;
+    --color-base-30: rgba(255, 255, 255, 0.4);
+    --color-base-40: #c3ff5d;
+}*/
+
+/* Style Neutral */
+.theme-dark {
+    color-scheme: dark;
+    --highlight-mix-blend-mode: normal;
+    --hr-color: rgba(255, 255, 255, 0.2);
+    --background-primary: #1a1a1a;
+    --background-secondary: #0c0c0c;
+    --background-secondary-alt: #0c0c0c;
+    --text-accent: #ffc500;
+    --text-accent-hover: #fffe2f;
+    --text-italic: #ffc500;
+    --interactive-accent: #fa005a;
+    --text-faint: #ffffff5e;
+    --color-base-30: rgba(255, 255, 255, 0.4);
+    --color-base-40: #c3ff5d;
+}
+
+/*** ------------------------------- ***/
+/*** ------------------------------- ***/
+/*** ------------------------------- ***/
+
 /*** ONGLETS RÉTRACTABLES ***/
 /* <Details> */
 
@@ -136,42 +175,51 @@ body [data-callout="title-info"] .callout-content p {
 /*** ------------------------------- ***/
 /*** ------------------------------- ***/
 
-/*** BACKGROUND + TRANSPARENT ***/
-/* Style green */
-/*
-.theme-dark {
-    color-scheme: dark;
-    --highlight-mix-blend-mode: normal;
-    --hr-color: rgba(255, 255, 255, 0.2);
-    --background-primary: #24292e;
-    --background-secondary: #181922;
-    --background-secondary-alt: #181922;
-    --text-accent: #c3ff5d;
-    --text-accent-hover: #fffe2f;
-    --text-italic: #2fffda;
-    --interactive-accent: #c3ff5d;
-    --text-faint: #ffffff5e;
-    --color-base-30: rgba(255, 255, 255, 0.4);
-    --color-base-40: #c3ff5d;
-}*/
-
-/* Style Neutral */
-.theme-dark {
-    color-scheme: dark;
-    --highlight-mix-blend-mode: normal;
-    --hr-color: rgba(255, 255, 255, 0.2);
-    --background-primary: #1a1a1a;
-    --background-secondary: #0c0c0c;
-    --background-secondary-alt: #0c0c0c;
-    --text-accent: #ffc500;
-    --text-accent-hover: #fffe2f;
-    --text-italic: #ffc500;
-    --interactive-accent: #fa005a;
-    --text-faint: #ffffff5e;
-    --color-base-30: rgba(255, 255, 255, 0.4);
-    --color-base-40: #c3ff5d;
+/* BOX SIMILAR ARTICLES */
+body .cm-callout:has([data-callout="similar"]) .edit-block-button {
+    display: none !important;
 }
 
+body [data-callout="similar"] {
+    border: 2px solid;
+    border-color: rgb(255, 255, 255, 0.2) !important;
+    background: color-mix(in srgb, var(--background-secondary) 40%, transparent) !important;
+    font-size: var(--infobox-font-size);
+    margin: 0px 0px 1.4em 0px !important;
+    padding: 20px 40px 20px 40px !important;
+}
+
+body [data-callout="similar"] .callout-title {
+    display: block !important;
+    color: var(--hr-color);
+}
+
+body [data-callout="similar"] .callout-icon {
+    display: none !important;
+}
+
+body [data-callout="similar"] .callout-content {
+    display: flex;
+    justify-content: left;
+    background: transparent;
+    margin: 0px 0px 0px 20px !important;
+    /*padding: 1em !important;*/
+}
+
+body [data-callout="similar"] .callout-content p,
+body [data-callout="similar"] .callout-content ul {
+    margin: 10px 0px 0px 0px !important;
+}
+
+body [data-callout="similar"] .edit-block-button {
+    display: none;
+}
+
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+
+/*** BACKGROUND + TRANSPARENT ***/
 /* Shadow */
 body {
   margin: 0;
@@ -365,6 +413,14 @@ body [data-callout="infobox"] .callout-content {
 
 body [data-callout="infobox"] .edit-block-button {
     display: none;
+}
+
+.markdown-preview-view img:not([width]), .markdown-rendered img:not([width]) {
+    /* max-width: 100%; */
+    width: 276px;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
 }
 
 /*body [data-callout="infobox"] .callout-content h2 {
