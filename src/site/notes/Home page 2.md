@@ -9,28 +9,6 @@
 
 ---
 
-
-> [!foldable]- # Espèces 
-> [[Universe/Événement/Chronologies\|Chronologies]]
-> test
-
-# Articles disponibles
----
-### Lore
-- [[Universe/Mondes/Abysses/Abysses\|Abysses]]
-- [[Universe/Mondes/Abysses/Nedenfor\|Nedenfor]]
-- [[Universe/Espèces/Veshkraal\|Veshkraal]]
-
-{ .block-language-dataview}
-
-### Registres
-- [[Universe/Événement/Chronologies\|Chronologies]]
-- [[Universe/Espèces/Classification des espèces\|Classification des espèces]]
-- [[Universe/Mondes/Classification des mondes\|Classification des mondes]]
-- [[Universe/Registre des Annexes/Extraits - Le Livre de Morca\|Extraits - Le Livre de Morca]]
-
-{ .block-language-dataview}
-
 <details class="callout foldable" data-callout="foldable">
 <summary class="callout-title"> Mondes   </summary>
 <p>Liste des mondes répertoriés :</p>
@@ -75,3 +53,22 @@ Cette compilation contient la chronologie de notre univers ainsi que les chronol
 </div>
 </details>
 </details>
+
+---
+>[!similar] #### Articles disponibles:
+>
+> ##### Lore
+>  - [[Universe/Mondes/Abysses/Abysses\|Abysses]]
+> - [[Universe/Mondes/Abysses/Nedenfor\|Nedenfor]]
+> - [[Universe/Espèces/Veshkraal\|Veshkraal]]
+> 
+{ .block-language-dataview}
+> 
+> ##### Registres
+> 
+>  - [[Universe/Événement/Chronologies\|Chronologies]]
+> - [[Universe/Espèces/Classification des espèces\|Classification des espèces]]
+> - [[Universe/Mondes/Classification des mondes\|Classification des mondes]]
+> - [[Universe/Registre des Annexes/Extraits - Le Livre de Morca\|Extraits - Le Livre de Morca]]
+> 
+{ .block-language-dataview}
