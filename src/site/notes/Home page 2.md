@@ -35,6 +35,7 @@
 <summary class="callout-title"> Mondes   </summary>
 <p>Liste des mondes répertoriés :</p>
 
+<summary class="callout-subtitle">Abysses  </summary>
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
@@ -49,6 +50,7 @@
 </div></div>
 
 
+<summary class="callout-subtitle">Abysses  </summary>
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
@@ -63,4 +65,6 @@
 
 
 </div>
+</details>
+</details>
 </details>
