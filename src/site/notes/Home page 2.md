@@ -50,7 +50,7 @@
 </div></div>
 
 
-<summary class="callout-subtitle">Abysses  </summary>
+<summary class="callout-subtitle">Stéllaire  </summary>
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
 
