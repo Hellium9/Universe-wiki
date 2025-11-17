@@ -1,8 +1,9 @@
 ```dataview
-List
+TABLE statut, dg-publish
 FROM #Species 
-WHERE dg-publish = true
 SORT file.name ASC
+
+</div></div>
 
 
 # Articles disponibles
