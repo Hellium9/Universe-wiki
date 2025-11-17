@@ -1,5 +1,6 @@
+/* ONLY FOR NETLIFY */
+
 /* ---------- MOBILE SCROLL FIX (iOS Safari) ---------- */
-/*  Colle ce bloc à la fin de custom-style.scss */
 
 /* 1) Forcer le document à être le conteneur de scroll principal */
 html, body {
@@ -12,17 +13,7 @@ html, body {
 
 /* 2) Neutraliser les wrappers qui pourraient créer un scroll interne
    (adapter/ajouter sélecteurs si tu as d'autres wrappers plein écran) */
-.content,
-main,
-.site,
-.page,
-.wrapper,
-.main-wrapper,
-.markdown-preview-sizer,
-.cm-sizer,
-.cm-contentContainer,
-.markdown-reading-view,
-.markdown-preview-view {
+.content, main, .site, .page, .wrapper, .main-wrapper, .markdown-preview-sizer, .cm-sizer, .cm-contentContainer, .markdown-reading-view, .markdown-preview-view {
   height: auto !important;
   min-height: 0 !important;
   overflow: visible !important;
@@ -31,10 +22,7 @@ main,
 
 /* 3) Empêcher les pseudo-éléments plein-écran basés sur vh de casser le calcul
    de la vue sur mobile (les pseudo éléments peuvent rester, on limite juste leur taille) */
-.cm-s-obsidian::before,
-.markdown-reading-view::before,
-.cm-s-obsidian::after,
-.markdown-reading-view::after {
+.cm-s-obsidian::before, .markdown-reading-view::before, .cm-s-obsidian::after, .markdown-reading-view::after {
   width: 100vw !important;
   max-width: 100% !important;
   height: 100vh !important;
@@ -42,15 +30,6 @@ main,
   top: 0 !important;
   left: 0 !important;
   /* garder z-index négatif si utilisé comme background */
-}
-
-/* 4) Si des blocs sont absolument positionnés hors flux (ex: infobox), permettre au flux principal de défiler normalement */
-body .markdown-preview-sizer > div:has([data-callout="infobox"]),
-body .markdown-preview-sizer:has([data-callout="infobox"]) > div:not(.mod-header) {
-  position: relative !important;
-  right: auto !important;
-  top: auto !important;
-  margin-right: 0 !important;
 }
 
 /* 5) Neutraliser les overflow:auto/overflow:scroll indésirables (garde l'overflow-x pour code/visuels) */
@@ -83,12 +62,16 @@ pre, code, .callout-content, .table-wrapper, .embed, .internal-embed {
   height: auto !important;
 }
 
-
+/* Mobile top ajust */
 @media (max-width: 800px) {
     .content {
         margin-top: 10px !important;
     }
 }
+
+/*** ------------------------------- ***/
+/*** ------------------------------- ***/
+/*** ------------------------------- ***/
 
 /* Style green */
 /*
@@ -594,4 +577,3 @@ body [data-callout="infobox"] .callout-content p:has(.internal-embed) {
 body [data-callout="infobox"] .callout-content  .internal-embed {
     border-radius: 0px;
 }
-
