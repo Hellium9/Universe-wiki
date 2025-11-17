@@ -276,8 +276,8 @@ body [data-callout="similar"] .callout-icon {
 }
 
 body [data-callout="similar"] .callout-content {
-    display: flex;
-    justify-content: left;
+    display: block;
+    /*justify-content: left;*/
     background: transparent;
     margin: 0px 0px 0px 20px !important;
     /*padding: 1em !important;*/
@@ -290,6 +290,10 @@ body [data-callout="similar"] .callout-content ul {
 
 body [data-callout="similar"] .edit-block-button {
     display: none;
+}
+
+body [data-callout="similar"] h5 {
+    margin: 20px 0px 0px 0px;
 }
 
 /* ------------------------------ */
