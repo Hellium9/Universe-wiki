@@ -67,7 +67,6 @@ Cette compilation contient la chronologie de notre univers ainsi que les chronol
 > Registres:
 >  - [[Universe/Événement/Chronologies\|Chronologies]]
 > - [[Universe/Espèces/Classification des espèces\|Classification des espèces]]
-> - [[Universe/Mondes/Classification des mondes\|Classification des mondes]]
 > - [[Universe/Registre des Annexes/Extraits - Le Livre de Morca\|Extraits - Le Livre de Morca]]
 > 
 { .block-language-dataview}
