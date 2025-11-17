@@ -1,7 +1,6 @@
-/* Only for Netlify */
-@media (max-width: 767px) {
-    body {
-        top: -40px;
+@media (max-width: 800px) {
+    .content {
+        margin-top: 10px !important;
     }
 }
 
@@ -383,6 +382,7 @@ body .markdown-preview-sizer:has([data-callout="infobox"]) {
         margin-left: auto !important;
         margin-right: auto !important;
         display: block;
+        width: auto !important;
     }
 
     body .cm-callout:has([data-callout="infobox"]),
@@ -408,6 +408,7 @@ body [data-callout="infobox"] {
     margin: 0px 0px 20px 20px;
     padding: 10px !important;
     margin-left: 20px;
+    width: var(--infobox-width);
 }
 
 body [data-callout="infobox"] .callout-title {
