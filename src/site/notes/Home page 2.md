@@ -49,6 +49,7 @@
 
 </div></div>
 
+</div>
 <details class="callout foldable" data-callout="foldable">
 <summary class="callout-subtitle">Stéllaire  </summary>
 
