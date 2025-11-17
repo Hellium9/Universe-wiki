@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/universe/evenement/chronologies/"}
+{"dg-publish":true,"permalink":"/universe/evenement/chronologies/","tags":["Chronology","Registery"]}
 ---
 
 

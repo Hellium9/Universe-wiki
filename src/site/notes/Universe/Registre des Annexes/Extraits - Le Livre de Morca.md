@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/universe/registre-des-annexes/extraits-le-livre-de-morca/"}
+{"dg-publish":true,"permalink":"/universe/registre-des-annexes/extraits-le-livre-de-morca/","tags":["Registery"]}
 ---
 
 # Préface:

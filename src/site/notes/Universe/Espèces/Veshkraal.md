@@ -9,7 +9,7 @@
 ---
 
 >[!similar] Recherches similaires:
-> - Voir registre de la [[Universe/Espèces/Classification des espèces\|Classification des espèces]].
+> - Registre des [[Universe/Espèces/Classification des espèces\|espèces classifiées]].
 > - Liste des *espèces Abyssales*.
 > - Liste des différentes *espèces de parasites*.
 > 
@@ -43,10 +43,8 @@
 > | type | stat |
 > | --- | --- |
 > | Nature: | Biologique 
-> | Reproduction: | Asexuée
-> |     | (Nécessitant un hôte)
-> | Longévité: | **[Inconnue]**
-> |     | (Varie selon la vitalité de l’hôte)
+> | Reproduction: | Asexuée <br>(Nécessitant un hôte)
+> | Longévité: | **[Inconnue]** <br>(Varie selon la vitalité de l’hôte)
 > | Intelligence: | Instinctive
 > | Dangerosité: | Modéré à Considéré[^1]
 >
@@ -66,11 +64,11 @@ Le Veshkraal ou *Enteromorphus parasitus*, est un endoparasite de petite taille,
 ---
 
 *L'Enteromorphus parasitus* est un parasite de petite taille, mais plus grand que la majorité des endoparasites. Doté d'un corps mou et longiforme pouvant mesurer entre 10cm et 20cm de long pour 3cm à 5cm de circonférence. Le veshkraal peut facilement être confondu avec une sangue avec laquelle il partage le même type d'appareil buccal, pourvue de mâchoires dentées, lui permettant de s'attacher à son hôte et de se fixer de manière durable. 
-La teinte de sa peau peut varier selon l'âge, l'espèce et l'environnement. 
+La teinte de sa peau peut varier selon l'âge, l'espèce et l'environnement.
 
 # Mode de reproduction
 ---
-Le Veshkraal est
+Le Veshkraal 
 # Élevage et Conservation
 ---
 Cette section est actuellement vide.
