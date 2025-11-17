@@ -50,6 +50,7 @@
 </div></div>
 
 </div>
+</details>
 <details class="callout foldable" data-callout="foldable">
 <summary class="callout-subtitle">Stéllaire  </summary>
 
@@ -65,6 +66,5 @@
 </div></div>
 
 </div>
-</details>
 </details>
 </details>
