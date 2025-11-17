@@ -57,3 +57,9 @@ Cette compilation contient la chronologie de notre univers ainsi que les chronol
 
 { .block-language-dataview}
 
+
+<details class="callout foldable" data-callout="foldable">
+<summary class="callout-title">Test</summary>
+<p> testing </p>
+</div>
+</details>
