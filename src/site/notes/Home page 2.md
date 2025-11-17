@@ -34,7 +34,7 @@
 <details class="callout foldable" data-callout="foldable">
 <summary class="callout-title"> Mondes   </summary>
 <p>Liste des mondes répertoriés :</p>
-
+<details class="callout foldable" data-callout="foldable">
 <summary class="callout-subtitle">Abysses  </summary>
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
@@ -49,7 +49,7 @@
 
 </div></div>
 
-
+<details class="callout foldable" data-callout="foldable">
 <summary class="callout-subtitle">Stéllaire  </summary>
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
@@ -62,7 +62,6 @@
 <ul><li>Univers<ul><li><a href="/universe/mondes/stellaire/espaces/espace-1/" data-href="Universe/Mondes/Stellaire/Espaces/Espace 1.md" class="internal-link">Espace 1</a><ul><li><a href="/universe/mondes/stellaire/galaxies/voie-lactée/" data-href="Universe/Mondes/Stellaire/Galaxies/Voie Lactée.md" class="internal-link">Voie Lactée</a><ul><li><a href="/universe/mondes/stellaire/planètes/terra/" data-href="Universe/Mondes/Stellaire/Planètes/Terra.md" class="internal-link">Terra</a></li></ul></li></ul></li></ul></li></ul>
 
 </div></div>
-
 
 </div>
 </details>
