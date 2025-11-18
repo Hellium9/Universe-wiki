@@ -10,7 +10,7 @@ Cette compilation contient la chronologie de notre univers ainsi que les chronol
 ### Chronologie Universelle
 
 - L'Avant Heim
-- Le Premier Âge
+- [[Universe/Événement/Le Premier Âge\|Le Premier Âge]]
   - La Genèse
   - La Grande Abondance
   - La Grande Corruption

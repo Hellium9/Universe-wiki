@@ -17,7 +17,7 @@
 > 
 { .block-language-dataview}
 
->[!similar] Articles disponibles:
+>[!similar] Registres disponibles:
 > Registres:
 >  - [[Universe/Événement/Chronologies\|Chronologies]]
 > - [[Universe/Espèces/Classification des espèces\|Classification des espèces]]
@@ -25,3 +25,9 @@
 > - [[Universe/Registre des Annexes/Extraits - Le Livre de Morca\|Extraits - Le Livre de Morca]]
 > 
 { .block-language-dataview}
+
+<details class="callout foldable" data-callout="foldable">
+<summary class="callout-title"> A </summary>
+"la liste"
+</div>
+</detail>
