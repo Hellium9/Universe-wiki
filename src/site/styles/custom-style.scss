@@ -188,6 +188,14 @@ details.callout[data-callout="foldable"] .markdown-embed {
     background: none;
 }
 
+/* list */
+details.callout[data-callout=foldable] .callout-content {
+    border-bottom: 2px solid var(--hr-color);
+    border-radius: 0px;
+    margin-bottom: 1.2em;
+    padding-bottom: 1.2em;
+}
+
 /* Chevron pour callout principal */
 details.callout[data-callout=foldable] > summary.callout-title::before {
   content: "▸";
