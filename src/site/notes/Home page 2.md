@@ -25,9 +25,3 @@
 > - [[Universe/Registre des Annexes/Extraits - Le Livre de Morca\|Extraits - Le Livre de Morca]]
 > 
 { .block-language-dataview}
-
-<details class="callout foldable" data-callout="foldable">
-<summary class="callout-title"> A </summary>
-"la liste"
-</div>
-</detail>
