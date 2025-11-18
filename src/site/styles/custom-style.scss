@@ -125,13 +125,13 @@ details.callout[data-callout="foldable"] .markdown-embed h6 {
 }
 
 details.callout[data-callout="foldable"] {
-  background: none;
-  position: relative;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0em;
-  padding-bottom: 0;
-  margin: 0;
+  background: none !important;
+  position: relative !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 0em !important;
+  padding-bottom: 0 !important;
+  margin: 0 !important;
 }
 
 details.callout[data-callout="foldable"] .callout-icon,
