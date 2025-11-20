@@ -371,6 +371,13 @@ body {
     position: relative;
 }
 
+/* Custom Fonts */
+.elagyn {
+  font-family: 'elagayn' !important;
+  line-height: 1.45em;
+  font-size: 24px;
+} 
+
 /* Italic */
 em, i {
   color: var(--text-italic) !important;
